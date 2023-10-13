@@ -1,0 +1,440 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Caveat:wght@600&family=Pacifico&family=Prompt:wght@700&family=Quicksand&display=swap');
+
+.nav1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+.navic {
+    font-family: Pacifico;
+}
+
+.nav1:hover {
+    background-color: rgb(21, 18, 20);
+}
+
+
+
+.nav2 {
+    font-weight: 500;
+    font-size: 23px;
+    margin-left: 7%;
+}
+
+.nav3 {
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+.nav4 {
+    margin-left: 3%;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.nav5 {
+    margin-left: 5%;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.hom2 {
+    position: absolute;
+    top: 0;
+    margin-top: 30%;
+    margin-left: 42%;
+}
+
+.hom6 {
+    background-color: #151214;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -8%;
+    width: 100%;
+}
+
+.hom7 {
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+.hom3 {
+    margin-bottom: -7%;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.hom4 {
+    margin-bottom: 4%;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.hom5 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav6 {
+    margin-left: 25%;
+
+}
+
+.nav7 {
+    margin-left: 6%;
+    font-size: 37px;
+    margin-top: 1%;
+}
+
+.nav8 {
+    margin-left: 8%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+.nav9 {
+    margin-left: 10%;
+}
+
+.hom92 {
+    margin-left: 20%;
+
+}
+
+.hom10 {
+    margin-left: 10%;
+    font-size: 38px;
+}
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+
+
+}
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: white;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(113, 107, 110);
+} */
+
+.lay1 {
+    margin-left: 14%;
+    font-size: 18px;
+}
+.lay2:hover{
+    background-color: #ddd ;
+    width: 100%;
+}
+
+.lay2 {
+    margin-left: 14%;
+    font-size: 13px;
+    margin-top: -2%;
+}
+
+.lay3 {
+    margin-left: 14%;
+    font-size: 13px;
+
+}
+.lay3:hover{
+    background-color: #ddd ;
+    width: 100%;
+}
+.lay4 {
+    background-color: tomato;
+    height: 15px;
+    font-size: 11px;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-weight: 500;
+    width: 26%;
+}
+
+.lay5 {
+    background-color: red;
+    height: 15px;
+    font-size: 11px;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    font-weight: 500;
+    width: 43%;
+}
+
+.lay6 {
+    background-color: royalblue;
+    height: 15px;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    font-weight: 500;
+    width: 43%;
+}
+
+.lay8 {
+    margin-left: 9%;
+}
+
+.lay9 {
+    margin-left: 20%;
+}
+
+.lay10 {
+    background-color: royalblue;
+    height: 16px;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-weight: 500;
+    width: 22%;
+}
+
+.lay11 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.lay12:hover {
+    text-decoration: underline;
+}
+
+.lay12 {
+    margin-top: -3%;
+    font-size: 12px;
+}
+
+.lay13 {
+    width: 90%;
+    height: 70%;
+}
+
+.shop1 {
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 18px;
+}
+.shop10 {
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 17.5px;
+}
+.shop2 {
+    font-size: 14px;
+}
+
+.shop2:hover{
+    background-color: #ddd ;
+    width: 100%;
+}
+.shop3{
+        background-color:tomato;
+        height: 14px;
+        font-size: 10px;
+        margin-left: 0.5%;
+        margin-top: 0.3%;
+        font-weight: 500;
+        width: 14%;
+}
+.shop4{
+    
+    background-color:royalblue;
+    height: 14px;
+    font-size: 10px;
+    margin-left: 0.5%;
+    margin-top: 0.3%;
+    font-weight: 500;
+    width: 14%;
+
+}
+.shop5{
+    font-size: 14px;
+    font-weight: 300;
+}
+.shop6{
+    font-size: 13px;
+}
+.shop7{
+    font-size: 19px;
+    margin-top: -3%;
+}
+.shop8{
+    border: 1px solid rgb(203,203,203);
+    margin-top: 5%;
+
+}
+.shop9{
+    border: 1px solid rgb(203,203,203) ;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.shop8:hover{
+    border-color: black;
+}
+.shop9:hover{
+    border-color: black;
+}
+
+.women1{
+    width: 100%;
+    height: 200px;
+    transition: all .3s ease-in-out;
+   
+}
+.women1:hover{
+    transform: scale(1.1);
+}
+.women2{
+    width: 100%;
+    height: 200px;
+    margin-left: 9%;
+    transition: all .3s ease-in-out;
+}
+.women2:hover{
+    transform: scale(1.1);
+}
+.women3{
+    position: relative;
+}
+.women4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.women5{
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -9%;
+
+}
+.women6{
+    position: absolute;
+    top: 0%;
+    margin-top: 43%;
+    margin-left: 10%;
+    background-color: white;
+    width: 80%;
+}
+.women7{
+    position: absolute;
+    top: 0%;
+    margin-top: 43%;
+    margin-left: 14%;
+    background-color: white;
+    width: 80%;
+}
+.women8{
+    overflow: hidden;
+  
+}
+.men1{
+    overflow: hidden;
+}
+.men2{
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 250%;
+ 
+
+}
+.men2:hover{
+    transform: scale(1.1);
+}
+.men3{
+
+    font-size: 16px;
+    font-weight: 300;
+}
+.men4{
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -6%;
+}
+.men5{
+    overflow: hidden;
+ 
+}
+.omn{
+    background-color: white;
+}
+
+.tab1{
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+  
+}
+
+.tab2{
+    margin-left: 5%;
+}
+.tab3{
+    background-color: white;
+    width: 20%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {    
+    background-color: #ddd;
+    height: 37px;
+
+}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .tab4{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  .tab5{
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -5%;
+  }
+
+  .tab7{
+    background-color:tomato;
+    height: 15px;
+    font-size: 10px;
+    margin-left: 2%;
+    margin-top: 0.3%;
+    font-weight: 500;
+    width: 50%;
+}
