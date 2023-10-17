@@ -119,18 +119,12 @@ function Women(props) {
                                     <p className='women5 text-center text-secondary'>Autumn Collection</p>
                                 </div>
                             </div>
-
                         </div>
-
-
-
                     </div>
-
-
-
                 </div>
-            <br/> <br/><br/>
-
+                <br />
+                <br />
+                <br />
             </div>
         </div>
     );

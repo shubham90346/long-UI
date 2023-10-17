@@ -35,10 +35,7 @@ function Shop(props) {
                                 <div className='shop3 text-white text-center mt-1'>HOT</div>
                             </div>
                             <div className='text-secondary shop2 mt-1'>Catalog Mode </div>
-
-
                         </div>
-
                     </div>
 
                     <div className='col-lg-2 mt-4'>
@@ -116,7 +113,7 @@ function Shop(props) {
                         </div>
                     </div>
                 </div>
-                <br/> 
+                <br />
             </div>
         </div>
     );

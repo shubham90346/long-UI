@@ -1,0 +1,189 @@
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+    .head1 {
+        display: none;
+    }
+
+    .head2 {
+        display: none;
+    }
+
+    .head3 {
+        display: none;
+    }
+
+    .head4 {
+        display: none;
+    }
+
+    .head5 {
+        display: none;
+    }
+
+    .navig1 {
+        display: block;
+    }
+
+    .navv3 {
+        display: none;
+    }
+
+    .head11 {
+        font-family: Young Serif;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 12%;
+        margin-top: 5%;
+    }
+
+    .main3 {
+        position: absolute;
+        top: 0;
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+
+    .main4 {
+        font-size: 18px;
+        font-family: Young Serif;
+    }
+
+    .main5 {
+        font-size: 20px;
+        font-family: Young Serif;
+        margin-top: -8%;
+    }
+
+    .main6 {
+        margin-top: -5%;
+        font-size: 11px
+    }
+
+
+    .main7 {
+        font-family: Jost;
+        color: white;
+        background-color: rgb(30, 73, 120);
+        width: 50%;
+        height: 23px;
+        margin-left: 23%;
+        font-size: 13px;
+    }
+
+    .main11 {
+        display: none;
+    }
+
+    .m11 {
+        display: block;
+        background-color: rgb(231, 234, 244);
+        width: 100%;
+
+    }
+
+    .m12 {
+        display: block;
+        background-color: rgb(246, 246, 246);
+        width: 100%;
+    }
+
+    .m13 {
+        display: block;
+        background-color: rgb(142, 180, 203);
+        width: 100%;
+    }
+
+    .main133 {
+        font-family: Young Serif;
+        /* margin-left: 20%; */
+        font-size: 32px;
+
+    }
+
+    .main233 {
+        width: 55%;
+        height: 280px;
+        margin-left: 23%;
+        margin-top: 6%;
+    }
+
+    .main155 {
+        font-family: Jost;
+        color: white;
+        background-color: rgb(30, 73, 120);
+        width: 35%;
+        height: 23px;
+        font-size: 12px;
+        margin-left: 30%;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    .footer3 {
+        display: block;
+    }
+
+    .footer5 {
+        display: block;
+    }
+
+    .f11 {
+        display: block;
+    }
+
+    .ic1 {
+        margin-left: 31%;
+        color: rgb(30, 73, 120);
+
+    }
+
+    .ic2 {
+        margin-left: 55%;
+        color: rgb(30, 73, 120);
+
+    }
+
+    .ic3 {
+        margin-left: 64%;
+        color: rgb(30, 73, 120);
+
+    }
+
+    .foot15 {
+        font-family: Jost;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 37%;
+    }
+
+    .foot16 {
+        font-family: Jost;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 44%;
+
+    }
+    .foot18{
+        font-family: Jost; 
+        color: white;
+        background-color: rgb(30,73,120);
+        font-size: 15px;
+        height: 27px;
+    }
+
+    .foot18:hover{
+        background-color: white;
+        color: rgb(30,73,120) ;
+        border: 1px solid  rgb(30,73,120);
+    }
+    .foot7{
+        width: 100%;
+    }
+
+    .head33 {
+        font-size: 22px;
+        margin-top: 18%;
+        margin-top: 37%;
+    }
+}

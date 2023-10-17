@@ -1,0 +1,151 @@
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+
+    .head1 {
+        display: none;
+    }
+
+    .head2 {
+        display: none;
+
+    }
+
+    .head3 {
+        display: none;
+    }
+
+    .head4 {
+        display: none;
+    }
+
+    .head5 {
+        display: none;
+    }
+
+    .navii3 {
+        font-family: Kanit;
+        font-weight: 500;
+        font-size: 22px;
+        background-color: rgb(138, 38, 38);
+        margin-top: -0.5%;
+    }
+
+    .main3 {
+        position: absolute;
+        top: 0;
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+    .main4 {
+        font-size: 20px;
+        font-family: Young Serif;
+    }
+
+    .main5 {
+        font-size: 25px;
+        font-family: Young Serif;
+        margin-top: -8%;
+    }
+
+    .main6 {
+        margin-top: -5%;
+        font-size: 15px
+    }
+
+
+    .main7 {
+        font-family: Jost;
+        color: white;
+        background-color: rgb(30, 73, 120);
+        width: 50%;
+        height: 23px;
+        margin-left: 23%;
+        font-size: 13px;
+    }
+
+    .navii1 {
+        margin-left: 2%;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .main21 {
+        width: 100%;
+    }
+
+    .navv2 {
+        margin-left: 0%;
+    }
+
+    .navv3 {
+        display: none;
+    }
+
+    .head11 {
+        font-family: Young Serif;
+        font-size: 20x;
+        font-weight: 500;
+        margin-left: 22%;
+        margin-top: 3%;
+    }
+
+    .head22 {
+        margin-left: 27%;
+
+    }
+
+    .head33 {
+        font-size: 28px;
+        margin-top: 18%;
+    }
+
+    .m11 {
+        background-color: rgb(231, 234, 244);
+        display: block;
+    }
+
+    .main133 {
+        font-family: Young Serif;
+     font-size: 38px;
+       
+        }
+
+    .main144 {
+        font-family: Jost;
+        font-size: 16px;
+        margin-top: 2%;
+      
+    }
+
+    .main155 {
+        font-family: Jost;
+        color: white;
+        background-color: rgb(30, 73, 120);
+        width: 35%;
+        height: 28px;
+        font-size: 13px;
+        margin-left: 30%;    
+    }
+    .main233{
+        width: 50%;
+        height: 250px;
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+    .m12{
+        background-color: rgb(246,246,246);
+        display: block;
+    }
+    .m13{
+        background-color: rgb(142,180,203);
+        display: block;
+    }
+    .main11{
+        display: none;
+    }
+    .navig1{
+        display: block;
+    }
+   
+   
+}

@@ -17,7 +17,12 @@ function Navigation(props) {
 
     const [active, IsActive] = useState(0);
 
+    const [isHovered, setIsHovered] = useState(false);
+    console.log(isHovered)
 
+    const handleVerified = () => {
+        setIsHovered(!isHovered);
+    };
 
     return (
         <div>
@@ -31,7 +36,6 @@ function Navigation(props) {
                 <div className='nav1 d-flex text-white'>
                     <h5 className='text-white nav2 mt-2'> <i className='navic'>Shella</i></h5>
                     <div className='nav3  d-flex mt-2 '>
-
                         <div className='nav4 ' onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
                             <p className=' nav4 d-flex'>LAYOUTS<span className='nav9'><IoIosArrowDown /></span> </p>
                         </div>
