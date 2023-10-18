@@ -133,6 +133,7 @@ function Nav(props) {
 
 
 
+
                 <div className='nav-2 d-flex'>
                     <nav class="navbar navbar-expand-lg navbar-light  navig1 ">
                         <div class="container-fluid">
@@ -208,15 +209,7 @@ function Nav(props) {
                         <HiOutlineShoppingBag className='head33 navig1' />
 
                     </div>
-
-
                 </div>
-
-
-
-
-
-
             </div>
 
             <div >

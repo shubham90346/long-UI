@@ -41,27 +41,38 @@
         margin-top: 18%;
     }
 
-    .main3 {
-        position: absolute;
-        top: 0;
-        margin-top: 20%;
-        margin-left: 6%;
+    .m1{
+        display: none !important;
+    }
+    .main3{
+        display: none !important;
+    }
+
+    .man1{
+        background-color: rgb(245,249,252);
+        display: block !important;
+    }
+    .main1{
+        width: 60%;
+        height: 300px;
+        margin-left: 20%;
     }
 
     .main4 {
-        font-size: 20px ;
+        font-size: 40px !important ;
         font-family: Young Serif;
+        line-height: 3;
     }
 
     .main5 {
-        font-size: 22px;
+        font-size: 40px !important;
         font-family: Young Serif;
-        margin-top: -8%;
+        margin-top: -12%;
     }
 
     .main6 {
-        margin-top: -5%;
-        font-size: 13px
+        margin-top: -3%;
+        font-size: 16px
     }
 
 
@@ -72,7 +83,7 @@
         width: 50%;
         height: 23px;
         margin-left: 23%;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .main11 {
@@ -107,7 +118,6 @@
         font-family: Jost;
         font-size: 14px;
         margin-top: 2%;
-   
     }
 
     .main155 {
@@ -151,28 +161,23 @@
         font-family: Jost;
         font-size: 16px; 
         text-decoration: none;
-        margin-left: 44%;
-        
+        margin-left: 44%;  
     }
     .foot33{
-    
         font-family: Jost;
         font-size: 13px;
     }
     .ic1{
        margin-left: 40%;
        color: rgb(30,73,120);
-       
     }
     .ic2{
         margin-left: 60%;
-        color: rgb(30,73,120);
-        
+        color: rgb(30,73,120);  
      }
      .ic3{
         margin-left: 64%;
-        color: rgb(30,73,120);
-        
+        color: rgb(30,73,120);  
      }
      .foot7{
         width: 100%;
@@ -181,8 +186,6 @@
         font-family: Jost;
         color: white;
         background-color: rgb(30,73,120);
-       
-     
         font-size: 15px;
     }
     .foot18{
@@ -201,8 +204,7 @@
     .footer4{
         margin-left: 37%;
     }
-    .foot10{
-       
+    .foot10{ 
         font-size: 28px;
         color:rgb(30,73,120) ;
     }
@@ -219,4 +221,10 @@
     .f11{
         display: block;
     }
+    .maj1{
+        display: none ;
+     }
+     .maj2{
+        display: none ;
+     }
 }

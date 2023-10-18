@@ -63,17 +63,23 @@
 .main3{
     position: absolute;
     top: 0;
-    margin-top: 20%;
-    margin-left: 36%;
+    margin-top: 16%;
+    margin-left: 22%;
+}
+.man1{
+    display: none !important;
+}
+.m1{
+    display: block !important;
 }
 .main4{
-    font-size: 40px;
+    font-size: 55px;
     font-family: Young Serif;
 }
 .main5{
-    font-size: 45px;
+    font-size: 55px !important;
     font-family: Young Serif;
-    margin-top: -8%;
+    margin-top: -6%;
 }
 .main6{  
     margin-top: -5%;
@@ -259,3 +265,9 @@
 .footer5{
     display: none;
 }
+.maj1{
+    display: none ;
+ }
+ .maj2{
+    display: none ;
+ }

@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Caveat:wght@400;600&display=swap');
+
+.navi1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navi2 {
+    margin-left: 2%;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.navi3 {
+    margin-top: 0%;
+}
+
+.navi4 {
+    margin-left: 3%;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.navi5 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.navi6 {
+    margin-left: 20%;
+    margin-top: -0.5%;
+}
+
+.navi8 {
+    margin-top: -0.5%;
+}
+
+.home1 {
+    font-size: 11px;
+}
+
+.home2 {
+    font-size: 11px;
+    margin-left: 1%;
+}
+
+.home3 {
+    margin-left: 15%;
+}
+
+.home4 {
+    font-weight: 370;
+    font-size: 35px;
+    /* font-family: Barlow Condensed; */
+}
+
+.home5 {
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+.home6 {
+    margin-top: -1%;
+    font-style: italic !important;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.home7 {
+    width: 100%;
+}
+
+.home8 {
+    font-size: 19px;
+}
+
+.home9 {
+    font-size: 24px;
+    font-weight: 370;
+}
+
+.home10 {
+    border-radius: 50%;
+    width: 50%;
+    height: 170px;
+    margin-left: 22%;
+}
+
+.home11 {
+    margin-left: 32%;
+    font-weight: 370;
+    font-size: 16px;
+    color: black;
+}
+
+.home12 {
+    font-size: 13px;
+}
+
+.home13 {
+    width: 50%;
+    margin-left: 20%;
+}
+
+.home14 {
+    font-weight: 370;
+}
+
+.home15 {
+    font-size: 15px;
+    margin-top: -4%;
+    margin-left: 6%;
+}
+
+.home16 {
+    font-size: 15px;
+    margin-left: 6%;
+}
+
+.home17 {
+    font-size: 14px;
+    font-weight: 370;
+}
+
+.home18 {
+    margin-top: -3%;
+    font-style: italic !important;
+    font-size: 13px;
+    font-weight: 370;
+
+}
+
+.dashed-line {
+    border: 1px dashed;
+}
+
+.home19 {
+    font-size: 12px;
+    margin-left: 2%;
+    border: 1px solid rgb(229, 229, 229);
+    width: 45%;
+    height: 23px;
+}
+
+.home19:hover {
+    border: 1px solid black;
+}
+
+.home20 {
+    font-size: 12px;
+    border: 1px solid rgb(229, 229, 229);
+    width: 45%;
+    height: 23px;
+}
+
+.home20:hover {
+    border: 1px solid black;
+}
+
+.home21 {
+    font-size: 12px;
+}
+
+.home22 {
+    width: 60%;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(242, 242, 242);
+}
+
+.home22:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+::placeholder {
+    font-size: 13px;
+
+}
+
+:hover::-webkit-input-placeholder {
+    color: black;
+}
+
+.home23 {
+    font-weight: 370;
+    margin-left: 5%;
+    border: 1px solid black;
+    width: 35%;
+    height: 34px;
+}
+
+.home23:hover {
+    color: white;
+    background-color: black;
+}
+
+.ho1 {
+    font-size: 19px;
+}
+
+.ho2 {
+    width: 35%;
+    height: 240px;
+}
+
+.ho3 {
+    font-weight: 370;
+    font-size: 23px;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 150px;
+}
+
+.ho4 {
+    font-style: italic !important;
+    font-size: 23px;
+    font-weight: 370;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.ho6 {
+    margin-left: 5%;
+    font-weight: 370;
+}
+
+.ho7 {
+    font-size: 14px;
+    font-weight: 370;
+}
+
+.ho8 {
+    font-size: 12px;
+    margin-top: -1%;
+    font-weight: 370;
+    text-decoration: underline;
+}
+
+.foo1 {
+    font-weight: 370;
+    font-size: 18px;
+}
+
+.foo2 {
+    font-size: 13px;
+    margin-top: -0.5%;
+}
+
+.foo3 {
+    width: 35%;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(242, 242, 242);
+}
+
+.foo3:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.foo4 {
+    font-weight: 370;
+    margin-left: 1%;
+    border: 1px solid black;
+    width: 15%;
+    height: 35px;
+}
+
+.foo4:hover {
+    color: white;
+    background-color: black;
+}
+
+.foo5 {
+    font-size: 12px;
+}
+
+.foo6 {
+    font-size: 12px;
+    margin-top: -1.5%;
+}
+
+.foo8 {
+    margin-left: 1%;
+}
+
+.b12 {
+    position: sticky;
+    top: 2rem;
+
+}
+
+.hea1 {
+    margin-top: 2%;
+}
+
+.n26 {
+    background-color: rgb(245, 67, 55);
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: -2%;
+    height: 14px;
+    font-weight: 500;
+    font-size: 10px;
+margin-top: 3%;
+}
+.foo10{
+    background-color: black;
+    height: 40px;
+}
+
+.foo12{
+    font-size: 20px;
+    color: white;
+}

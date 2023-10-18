@@ -95,7 +95,7 @@ function Footer(props) {
                      >
                         <p className='foot16 '>SHOP<span className='ic3'><BsPlus /></span> </p>
                     </div>
-                    <div>
+                    <div className=''>
                         {
                              showText &&<>
                                 <p className='foot33 text-secondary text-center'>New</p>
@@ -114,7 +114,7 @@ function Footer(props) {
                     <div className='' onClick={() =>  setShowTextt(!showTextt)}>
                         <p className='foot15 '>INFORMATION <span className='ic1'><BsPlus /></span></p>
                     </div>
-                    <div>
+                    <div className=''>
                         {
                             showTextt &&  <>
                             
