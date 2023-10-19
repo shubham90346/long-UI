@@ -26,7 +26,7 @@ function Navigation(props) {
 
     return (
         <div>
-            <div className=' '>
+            {/* <div className=' '>
                 <div className=''>
                     <video width="100%" height="" preload='none' muted playsInline autoPlay loop className=''>
                         <source src="https://cdn.shopify.com/s/files/1/0264/8817/6717/files/pexels-cottonbro-9512045.mp4?v=1637151689" type='video/mp4' />
@@ -102,6 +102,7 @@ function Navigation(props) {
                     <div className=' tab1'>
                         {
                             active == 1 && <>
+                            
                                 <Layout />
                             </>
                         }
@@ -147,7 +148,7 @@ function Navigation(props) {
 
 
 
-            </div>
+            </div> */}
         </div>
 
     );

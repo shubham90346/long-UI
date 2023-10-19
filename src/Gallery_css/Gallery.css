@@ -1,0 +1,186 @@
+.gallery{
+    font-weight: 300;
+    font-size: 22px;
+    background-color: black;
+    margin-top: 0%;
+}
+.gallery1{
+    margin-top: -1.5%;
+}
+.gallery2{
+    width: 100%;
+    display: block;
+
+
+  
+
+}
+.gallery2:hover{
+    opacity:0.3 !important;
+    transition: 0.6s;
+}
+.gall1{
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 0px !important;
+   margin-top: 6%;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    background-color: #858585 !important;
+    width: 100%;
+   
+    
+}
+
+
+.gallery11{
+    margin-top: 8%;
+}
+.ft1{
+    font-weight: 370;
+    font-size: 18px;
+}
+.ft2{
+    font-size: 12px;
+    margin-top: -1.5%;
+}
+.ft3{
+    color: black;
+     font-weight: 360;
+     font-size: 18px;  
+}
+.ft4{
+    margin-left: 21%;
+}
+.ft5{
+    margin-left: 10%;
+}
+.ft6 {
+    width: 80%;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(242, 242, 242);
+}
+
+.ft6:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.ft7 {
+    font-weight: 370;
+    margin-left: 1%;
+    border: 1px solid black;
+    width: 25%;
+    height: 35px;
+}
+
+.ft7:hover {
+    color: white;
+    background-color: black;
+}
+.ft8{
+    font-size: 12px;
+    color: rgb(108,117,125);
+}
+.ft8:hover{
+    color: black;
+}
+.ft9{
+    font-weight: 370;
+    font-size: 18px;
+    color: black;
+    margin-top: -1%;
+}
+.ft10{
+    font-size: 13px;
+    font-weight: 300;
+}
+.ft11{
+    font-size: 12px;
+}
+.ft12{
+    font-size: 12px;
+    margin-top: -6%;
+}
+.ft13{
+    font-size: 17px;
+    margin-top: 0%;
+}
+.ft14{
+    font-size: 12px;
+    margin-top: -0.5%;
+    margin-left: 5%;
+}
+.ft15{
+    margin-left: 22%;
+}
+.ft16{
+    font-size: 12px;
+    margin-left: 5%;
+}
+.ft17{
+    margin-top: -10%;
+}
+.ft19{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 3%;
+}
+.ft18{
+    margin-top: -0.5%;
+}
+.ft21{
+    margin-left: 45%;
+    margin-top: 2%;
+}
+.ft20{
+    margin-left: 8%;
+    font-size: 23px;
+}
+
+
+.cont {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+  
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #858585 !important;
+  }
+  
+  .cont:hover .overlay {
+    opacity: 0.6;
+  }
+  
+  .text {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  

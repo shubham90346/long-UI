@@ -293,7 +293,6 @@
 .b12 {
     position: sticky;
     top: 2rem;
-
 }
 
 .hea1 {
@@ -309,14 +308,15 @@
     height: 14px;
     font-weight: 500;
     font-size: 10px;
-margin-top: 3%;
+    margin-top: 3%;
 }
-.foo10{
+
+.foo10 {
     background-color: black;
     height: 40px;
 }
 
-.foo12{
+.foo12 {
     font-size: 20px;
     color: white;
 }

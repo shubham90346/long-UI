@@ -13,6 +13,7 @@ function Footer(props) {
     
 
     return (
+      
         <div className='container'>
             <div className='row footer1'>
                 <div className='col-lg-6 d-flex col-md-12 col-sm-12'>

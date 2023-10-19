@@ -11,7 +11,7 @@ import { BsArrowUp } from 'react-icons/bs'
 function Blog_Footer(props) {
     return (
         <div>
-            <div className='container'>
+            {/* <div className='container'>
                 <p className='foo1 text-center mt-4'>NEWSLETTER SUBSCRIPTION</p>
                 <p className='text-secondary foo2 text-center'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
                 <div className='d-flex justify-content-center mt-4'>
@@ -44,7 +44,7 @@ function Blog_Footer(props) {
 
                <a href='#heades'> <BsArrowUp className='mt-2 foo12'/></a> 
         
-            </div>
+            </div> */}
         </div>
     );
 }

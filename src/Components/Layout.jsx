@@ -1,22 +1,42 @@
 import React from 'react';
 import img1 from '../lay1.webp';
 import img2 from '../lay2.webp';
+import { Link } from "react-router-dom";
+
 
 function Layout(props) {
+
+
     return (
         <div className=" container">
             <div className='row'>
                 <div className='d-flex col-lg-4'>
                     <div className='lay8' >
                         <p className='text-black text-black lay1  mt-4 '>LAYOUTS</p>
-                        <div className='text-secondary lay2 d-flex mt-1'>HomeV1
+                        <div className='text-secondary lay2 d-flex mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/homev1">
+                                HomeV1
+                            </Link>
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
-                        <div className='lay3 text-secondary mt-1'>HomeV2</div>
-                        <div className='lay3 text-secondary d-flex mt-1'>HomeV3
+                        <div className='lay3 text-secondary mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/homev2">
+                                HomeV2
+                            </Link>
+
+                        </div>
+                        <div className='lay3 text-secondary d-flex mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/homev3">
+                                HomeV3
+                            </Link>
+
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
-                        <div className='lay3 text-secondary mt-1'>HomeV4</div>
+                        <div className='lay3 text-secondary mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/homev4">
+                                HomeV4
+                            </Link>
+                        </div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>HomeV5
                             <div className='lay5 text-white text-center'>ACTIVE</div>
@@ -136,7 +156,7 @@ function Layout(props) {
                 </div>
 
             </div>
-            <br/> <br/> 
+            <br /> <br />
         </div>
     );
 }

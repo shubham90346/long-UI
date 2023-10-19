@@ -5,59 +5,8 @@ import { CiSearch } from 'react-icons/ci'
 function Nav(props) {
     return (
         <div>
-            <div className='container navii2'>
-                {/* <div className='navii1  dropdown'>
-                    <p className='navii1 d-flex dropbtn'>NEW</p>
-                </div>
-
-                <div className='navii1 dropdown'>
-                    <p className='navii1 d-flex dropbtn'>CLOTHING</p>
-                    <div class="dropdown-content">
-                        <a href="#" className='tab4 text-secondary shop2'>Dresses and jumpssuits</a>
-                        <a href="#" className='tab5  text-secondary shop2'>Polo Suits</a>
-                        <a href="#" className='tab5 text-secondary shop2'>T-shirts</a>
-                        <a href="#" className='tab5 text-secondary shop2'>Sweaters</a>
-                        <a href="#" className='tab5 text-secondary shop2'>Blazers</a>
-                        <a href="#" className='tab5 text-secondary shop2'>Jackets,Coats</a>
-                        <a href="#" className='tab5 text-secondary shop2'>Pants</a>
-                        <a href="#" className='tab5 text-secondary shop2'>Jeans & Denim</a>
-
-                    </div>
-                </div>
-
-                <div className='navii1 dropdown'>
-                    <p className='navii1 d-flex dropbtn'>SHOES</p>
-                    <div class="dropdown-content">
-                        <a href="#" className='tab4 text-secondary'>Masonry</a>
-                        <a href="#" className='tab5  text-secondary'>Masonry</a>
-                        <a href="#" className='tab5 text-secondary'>Grid </a>
-                        <a href="#" className='tab5 text-secondary'>Grid</a>
-                        <a href="#" className='tab5 text-secondary'>Single </a>
-
-                    </div>
-                </div>
-
-                <div className='navii1 dropdown'>
-                    <p className='navii1 d-flex dropbtn'>ACCESSORIES</p>
-                    <div class="dropdown-content">
-                        <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
-                        <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
-                        <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
-                        <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
-                        <a href="#" className='tab5 text-secondary'>Single </a>
-
-                    </div>
-                </div>
-
-                <div className='navii1 dropdown'>
-                    <p className='navii1 d-flex dropbtn'>BUYNOW!</p>
-                    <div class="dropdown-content">
-                        <a href="#" className='tab4 text-secondary'>Back to main Demo</a>
-
-
-                    </div>
-                </div> */}
-
+            {/* <div className='container navii2'>
+              
 
 
 
@@ -214,7 +163,7 @@ function Nav(props) {
 
             <div >
                 <p className='navii3 text-center text-white'>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
-            </div>
+            </div> */}
 
         </div>
     );

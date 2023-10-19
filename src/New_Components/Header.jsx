@@ -6,7 +6,7 @@ function Header(props) {
     return (
         <div>
 
-            <div className=' d-flex head23'>
+            {/* <div className=' d-flex head23'>
                 <p className=' head1'>SHELLA</p>
                 <div className='d-flex head2 mt-2'>
                     <CiSearch className='head3' />
@@ -14,7 +14,7 @@ function Header(props) {
                     <p className='head4 mt-1'>Bag(0)</p>
                 </div>
             </div>
-            <hr className='head5'></hr>
+            <hr className='head5'></hr> */}
 
         </div>
     );
