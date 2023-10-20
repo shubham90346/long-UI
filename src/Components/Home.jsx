@@ -18,9 +18,10 @@ import img1 from '../lay1.webp';
 import img2 from '../lay2.webp';
 import Women from './Women';
 import Mens from './Mens';
-function Home(props) {
-    const [active, IsActive] = useState(0);
 
+function Home(props) {
+    
+    const [active, IsActive] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     console.log(isHovered)
 
@@ -107,6 +108,7 @@ function Home(props) {
                         </div>
 
                     </div>
+                    
                     <div className=' tab1'>
                         {
                             active == 1 && <>

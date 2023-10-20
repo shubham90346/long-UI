@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoQuestion } from 'react-icons/go';
 import { GoPerson } from 'react-icons/go';
 import { BsHeart } from 'react-icons/bs';
@@ -14,6 +14,11 @@ import img5 from '../Gallery_images/g6.jpg';
 import img6 from '../Gallery_images/g7.avif';
 import img7 from '../Gallery_images/g8.avif';
 import img8 from '../Gallery_images/g9.avif';
+import Women from '../Components/Women';
+import Mens from '../Components/Mens';
+import Layout from '../Components/Layout';
+import Shop from '../Components/Shop';
+import { IoIosArrowDown } from 'react-icons/io';
 import { IoCallOutline } from 'react-icons/io5';
 import { TfiAlarmClock } from 'react-icons/tfi';
 import { VscMail } from 'react-icons/vsc';
@@ -29,18 +34,29 @@ import { RiMastercardFill } from 'react-icons/ri';
 import { FaCcPaypal } from 'react-icons/fa';
 import { LiaCcDiscover } from 'react-icons/lia';
 import { FaCcAmazonPay } from 'react-icons/fa';
+import { BsPlus } from 'react-icons/bs'
 
 
 function Gallery(props) {
+    const [active, IsActive] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+    console.log(isHovered)
+    const [showText, setShowText] = useState(false);
+    const [showTextt, setShowTextt] = useState(false);
+    const [showText1, setShowText1] = useState(false);
+    const [showText11, setShowText11] = useState(false);
+
     return (
         <div className=''>
 
             {/* ---HEADER----*/}
 
-            <div className='' >
-                <p className='gallery text-center text-white '>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
+            <div className=''  >
+                <p className='gallery text-center text-white' id='tp'>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
             </div>
-            <div className='container'>
+
+
+            <div className='container hide1'>
                 <div className='row gallery1' id='heades'>
                     <div className='col-lg-6'>
                         <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
@@ -57,118 +73,374 @@ function Gallery(props) {
                     </div>
                 </div>
             </div>
-            <hr className='navi3'></hr>
+            <hr className='navi3 hide1'></hr>
+
+
+            {/* -----NAVIGATION BAR------ */}
+
+            <div className='container hide1'>
+
+
+
+                <nav className="navbar navbar-expand-lg navbar-light">
+                    <div className="">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav  mb-lg-0  a6" >
+
+                                <li className="nav-item a2 ">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
+                                        LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
+                                </li>
+                                <li className="nav-item a1 ">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+
+
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                        <a className="nav-link d-flex" href="#">SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
+                                            <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
+                                            <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
+                                            <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
+                                            <a href="#" className='tab5 text-secondary'>Single Post</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                        <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
+                                            <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
+                                            <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
+                                            <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
+                                            <a href="#" className='tab5 text-secondary'>Single </a>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>About Us</a>
+                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
+                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
+                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
+                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
+                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
+                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
+                                            <a href="#" className='tab5 text-secondary'>Icons</a>
+                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li className="nav-item a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+                                <li className="nav-item a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+                                <li className="nav-item  a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+                <div className=' a4'>
+                    {
+                        active == 1 && <>
+
+                            <Layout />
+                        </>
+                    }
+                    {
+                        active == 2 && <>
+                            <Shop />
+                        </>
+                    }
+                    {
+                        active == 6 && <>
+                            <Women />
+                        </>
+                    }
+                    {
+                        active == 7 && <>
+                            <Mens />
+                        </>
+                    }
+
+
+                </div>
+
+
+            </div>
+            <hr className='navi3 hide1'></hr>
+
+
+            {/* ----RESPONSIVE NAVBAR---- */}
+
+
+            <div className='container-fluid hide2'>
+                <div className='row b4 '>
+                    <div className='col-md-6 col'>
+                        <div className='d-flex'>
+                            <div className=' '>
+                                <nav className="navbar navbar-expand-lg navbar-light">
+                                    <div className="">
+                                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span className="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul className="navbar-nav  mb-lg-0  a6" >
+
+                                                <li className="nav-item a2 ">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
+                                                        LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
+                                                </li>
+                                                <li className="nav-item a1 ">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+
+
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
+                                                            <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
+                                                            <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
+                                                            <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
+                                                            <a href="#" className='tab5 text-secondary'>Single Post</a>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
+                                                            <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
+                                                            <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
+                                                            <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
+                                                            <a href="#" className='tab5 text-secondary'>Single </a>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>About Us</a>
+                                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
+                                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
+                                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
+                                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
+                                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
+                                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
+                                                            <a href="#" className='tab5 text-secondary'>Icons</a>
+                                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li className="nav-item a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+                                                <li className="nav-item a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+                                                <li className="nav-item  a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div className=' a4'>
+                                    {
+                                        active == 1 && <>
+
+                                            <Layout />
+                                        </>
+                                    }
+                                    {
+                                        active == 2 && <>
+                                            <Shop />
+                                        </>
+                                    }
+                                    {
+                                        active == 6 && <>
+                                            <Women />
+                                        </>
+                                    }
+                                    {
+                                        active == 7 && <>
+                                            <Mens />
+                                        </>
+                                    }
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div className='b2'>
+                                <SiSwiper className='b1' />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className='col-md-6 col d-flex justify-content-end '>
+                        <CiSearch className='b3 mt-3' />
+                        <GoQuestion className='b3 mt-3' />
+                        <GoPerson className='b3 mt-3' />
+                        <BsHeart className='b3 mt-3' />
+                        <HiOutlineShoppingBag className='b3 mt-3 ' />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr className='b5 hide2'></hr>
 
 
             {/* ----HOME---- */}
+            <div className=''>
 
-            <div className='container'>
-                <div className='d-flex'>
-                    <p className='home1 text-secondary'>Home<span className='home3'>/</span></p>
-                    <p className='home2 text-secondary'>News</p>
-                </div>
-            </div>
-
-
-            <div>
-                <div className='container-fluid row'>
-                    <div className='col-lg-4'>
-
-                        <div className='dhy cont'>
-                            <img src={img} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">FASHION <p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img1} className='gallery2' />
-                            <div className='overlay '>
-                                <div className="text">SUMMER <p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img2} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">WINTER <p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className='col-lg-4'>
-                        <div className='cont'>
-                            <img src={img3} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">TEXT-LINE #1<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img4} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">SUNGLASSES<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img5} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">SHORTS<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='col-lg-4'>
-                        <div className='cont'>
-                            <img src={img6} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">VINTAGE<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img7} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">BEACHWEAR<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
-                        <div className='cont'>
-                            <img src={img8} className='gallery2' />
-                            <div className='overlay'>
-                                <div className="text">ACCESSORIES<p>Lorem ipsum dolor</p></div>
-
-                            </div>
-                        </div>
-
+                <div className='container'>
+                    <div className='d-flex mob2'>
+                        <p className='home1 text-secondary'>Home<span className='home3'>/</span></p>
+                        <p className='home2 text-secondary'>News</p>
                     </div>
                 </div>
-                <hr className='gallery11'></hr>
+
+
+                <div>
+                    <div className=' row'>
+                        <div className='col-lg-4 col-md-4'>
+
+                            <div className='dhy cont'>
+                                <img src={img} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">FASHION <p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img1} className='gallery2' />
+                                <div className='overlay '>
+                                    <div className="text">SUMMER <p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img2} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">WINTER <p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='col-lg-4 col-md-4'>
+                            <div className='cont'>
+                                <img src={img3} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">TEXT-LINE #1<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img4} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">SUNGLASSES<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img5} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">SHORTS<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='col-lg-4 col-md-4'>
+                            <div className='cont'>
+                                <img src={img6} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">VINTAGE<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img7} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">BEACHWEAR<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                            <div className='cont'>
+                                <img src={img8} className='gallery2' />
+                                <div className='overlay'>
+                                    <div className="text">ACCESSORIES<p>Lorem ipsum dolor</p></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr className='gallery11'></hr>
+                </div>
+                <br /> <br />
+
             </div>
-            <br /> <br />
+
 
 
             {/* ----FOOTER---- */}
 
             <div className='container'>
-                <div className=' row'>
-                    <div className='col-lg-6'>
+                <div className=' row hide3'>
+                    <div className='col-lg-6 col-md-12'>
                         <div className=''>
                             <p className='ft1'>NEWSLETTER SUBSCRIPTION</p>
                             <p className='ft2 text-secondary'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
                         </div>
 
-                        <div className='mt-5 d-flex '>
+                        <div className='mt-5 d-flex b8'>
                             <div className=''>
                                 <p className='ft3'>SHOP</p>
                                 <p className='foot3 text-secondary'>New</p>
@@ -205,23 +477,30 @@ function Gallery(props) {
 
                     </div>
 
-                    <div className='col-lg-6'>
-                        <div className='d-flex justify-content-center '>
-                            <input type='text' className='ft6' placeholder='Enter your Email Address' />
-                            <div className='ft7'>
+                    <div className='col-lg-6 col-md-12'>
+                        <div className='d-flex justify-content-center'>
+                            <input type='text' className='ft6 hide1' placeholder='Enter your Email Address' />
+                            <div className='ft7 hide1'>
+                                <p className=' text-center mt-1 '>SUBSCRIBE!</p>
+                            </div>
+                        </div>
+
+                        <div className=' justify-content-center mt-4'>
+                            <input type='text' className='ft66 hide2' placeholder='Enter your Email Address' />
+                            <div className='ft77 hide2'>
                                 <p className=' text-center mt-1 '>SUBSCRIBE!</p>
                             </div>
                         </div>
 
 
                         <div className='d-flex mt-3'>
-                            <div className="form-check">
+                            <div className="form-check b10">
                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                                 <p className='ft8 '>I agree with the Privacy. Tristique senectus et netus et malesuada. Nunc scelerisque viverra mauris in.</p>
                             </div>
                         </div>
 
-                        <div className='d-flex'>
+                        <div className='d-flex b9'>
                             <div>
                                 <p className='ft9'>HERE TO HELP</p>
                                 <p className='ft11 text-secondary'>Have a question? You may find an answer in our FAQs</p>
@@ -294,39 +573,203 @@ function Gallery(props) {
 
                 </div>
             </div>
-            <br /> <br />
+  
 
-            <hr className=''></hr>
+                {/* responsive small */}
 
-            <div className='container'>
-                <div className=''>
-                <div className='row ft18'>
-                    <div className='col-lg-6 d-flex'>
-                        <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
-                        <p className='text-secondary ft19'>© 2023 Shella Shopify theme. All Rights Reserved. Ecommerce Software by Shopify.</p>
+
+            <div className='row f11'>
+                <div className='col-sm-12 '>
+                    <div className=''>
+                    <p className='foot5  text-center'>NEWSLETTER SUBSCRIPTION</p>
+                    <p className='foot6 text-secondary text-center'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
+                    </div>
+                  
+                </div>
+
+                <div className='col-sm-12'>
+                    <div className='d-flex mt-2'>
+                        <input type="text" placeholder='Enter Your Email Address' className='foot7' />
                     </div>
 
-                    <div className='col-lg-6 '>
-                        <div className='d-flex ft21'>
-                            <BiLogoVisa className='ft20' />
-                            <RiMastercardFill className='ft20' />
-                            <FaCcPaypal className='ft20' />
-                            <LiaCcDiscover className='ft20' />
-                            <FaCcAmazonPay className='ft20' />
+                    <div className='col-sm-12'>
+                        <div className='foot18 mt-3  text-center'>SUBSCRIBE!</div>
+                    </div>
+
+                    <div className='col-sm-12'>
+                        <div className='d-flex mt-3'>
+                            <div className="form-check b10">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <p className='ft8 text-center'>I agree with the Privacy. Tristique senectus et netus et malesuada. Nunc scelerisque viverra mauris in.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+            <div className='row footer3 mt-4'>
+                <div className='col-sm-12'>
+                <hr className=''></hr>
+                    <div className='' onClick={() => setShowText(!showText)}
+                    //  {active === 1 ? setShowText(!showText)  : ""}
+
+                    >
+                        <p className='foot16 '>SHOP<span className='ic3'><BsPlus /></span> </p>
+                    </div>
+                    <div className=''>
+                        {
+                            showText && <>
+                                <p className='foot33 text-secondary text-center'>New</p>
+                                <p className='foot33 text-secondary text-center'>Clothing</p>
+                                <p className='foot33 text-secondary text-center'>Shoes</p>
+                                <p className='foot33 text-secondary text-center'>Accessories</p>
+                            </>
+                        }
+                    </div>
+
+
+                </div>
+                <hr></hr>
+
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowTextt(!showTextt)}>
+                        <p className='foot15 '>INFORMATION <span className='mob6'><BsPlus /></span></p>
+                    </div>
+                    <div className=''>
+                        {
+                            showTextt && <>
+                                <p className='foot33 text-secondary text-center'>About us</p>
+                                <p className='foot33 text-secondary text-center'>Sizing Guide</p>
+                                <p className='foot33 text-secondary text-center'>FAQ's</p>
+                                <p className='foot33 text-secondary text-center'>Contact us</p>
+                            </>
+                        }
+                    </div>
+                </div>
+
+                <hr></hr>
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowText1(!showText1)}>
+                        <p className='foot16 '>ORDER <span className='ic2'><BsPlus /></span></p>
+                    </div>
+                    <div>
+                        {
+                            showText1 && <>
+                                <p className='foot33 text-secondary text-center'>My Account</p>
+                                <p className='foot33 text-secondary text-center'>View Blog</p>
+                                <p className='foot33 text-secondary text-center'>Wishlist</p>
+                                <p className='foot33 text-secondary text-center'>Compare</p>
+
+                            </>
+                        }
+                    </div>
+                </div>
+                <hr></hr>
+
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowText11(!showText11)}>
+                        <p className='mob3 '>HERE TO HELP <span className='mob4'><BsPlus /></span></p>
+                    </div>
+                    <div>
+                        {
+                            showText11 && <>
+                                <p className='foot33 text-secondary text-center'>Have a question? You may find an answer in our FAQs.But you can also contact us:</p>
+                                <p className='foot33  text-center'>Customer Service</p>
+                                <div className='d-flex justify-content-center'>
+                                    <IoCallOutline className='ft13' />
+                                    <p className='text-secondary ft14'>Call Us: 800-123-4567</p>
+                                </div>
+
+                                <div className='d-flex justify-content-center'>
+                                    <TfiAlarmClock className='ft13' />
+                                    <p className='text-secondary ft14'>
+                                        Mon-Fri: 9:00 am - 6:00 pm<br />
+                                        Sat: 9:00 am - 4:00 pm<br />
+                                        Sun: 9:00 am - 2:00 pm</p>
+                                </div>
+
+                                <div className='d-flex justify-content-center'>
+                                    <VscMail className='ft13' />
+                                    <p className='text-secondary ft14'>Send us an email</p>
+                                </div>
+
+
+
+                            </>
+                        }
+                               <hr className=''></hr>
+                    </div>
+                </div>
+            </div>
+
+            <br /> <br />
+            <hr className='hide4'></hr>
+            <div className='container'>
+                <div className='hide1'>
+                    <div className='row ft18'>
+                        <div className='col-lg-6 col-md-6 d-flex'>
+                            <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
+                            <p className='text-secondary ft19'>© 2023 Shella Shopify theme. All Rights Reserved. Ecommerce Software by Shopify.</p>
+                        </div>
+
+                        <div className='col-lg-6 col-md-6    '>
+                            <div className='d-flex ft21'>
+                                <BiLogoVisa className='ft20' />
+                                <RiMastercardFill className='ft20' />
+                                <FaCcPaypal className='ft20' />
+                                <LiaCcDiscover className='ft20' />
+                                <FaCcAmazonPay className='ft20' />
+                            </div>
+
                         </div>
 
                     </div>
-
                 </div>
-                </div>
-              
 
+
+            </div>
+
+
+            <div className='container'>
+                <div className='hide2'>
+                    <div className='row ft18'>
+                        <div className='col-md-12 '>
+                            <h5 className=' text-center mt-2 navi1'> <i className='navic'>Shella</i></h5>
+
+                        </div>
+
+                        <div className='col-md-12 '>
+
+                            <p className='text-secondary text-center ft19'>© 2023 Shella Shopify theme. All Rights Reserved. Ecommerce Software by Shopify.</p>
+                        </div>
+
+                        <div className=' col-md-12 d-flex justify-content-center  '>
+                            <div className='d-flex mt-2'>
+                                <BiLogoVisa className='b11' />
+                                <RiMastercardFill className='b11' />
+                                <FaCcPaypal className='b11' />
+                                <LiaCcDiscover className='b11' />
+                                <FaCcAmazonPay className='b11' />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div className='top11'>
+              <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tp'>TOP</a>
             </div>
 
 
 
 
-         
+
 
 
         </div>

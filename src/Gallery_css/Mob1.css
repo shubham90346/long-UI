@@ -1,0 +1,109 @@
+@media only screen and (max-width: 766px) and (min-width: 425px) {
+    .gallery {
+        font-weight: 300;
+        font-size: 16px;
+        background-color: black;
+        margin-top: 0%;
+    }
+
+    .hide1 {
+        display: none;
+    }
+
+    .hide2 {
+        display: block;
+    }
+
+    .b3 {
+        font-size: 28px;
+        margin-left: 8%;
+    }
+
+    .b2 {
+        margin-top: 6%;
+        margin-left: 14%;
+    }
+
+    .mob2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .foot18{
+        font-family: Jost; 
+        color: white;
+        background-color: black;
+        font-size: 15px;
+        height: 24px;
+    }
+
+    .foot18:hover{
+        background-color: white;
+        color: black ;
+        border: 1px solid  black;
+    }
+    .foot7{
+        width: 100%;
+    }
+    
+    .b10 {
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+    .ft8{
+        margin-left: -4%;
+    }
+    .mob3 {   
+        font-family: Jost;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 36%;
+
+    }
+    .mob4 {
+        margin-left: 45%;
+        color: black;
+    }
+    .mob6{
+        margin-left: 44%;
+        color: black;
+    }
+    .ic1 {
+        margin-left: 33%;
+        color:black;
+    }
+
+    .ic2 {
+        margin-left: 60%;
+        color: black;
+    }
+
+    .ic3 {
+        margin-left: 66%;
+        color: black;
+    }
+    .foot5{
+        font-family: Jost;
+        font-size: 20px; 
+        margin-top: -7%;
+    }
+    .hide3{
+        display: none;
+    }
+    .hide4{
+        display: none;
+    }
+   
+    .b11 {
+        font-size: 55px;
+        margin-left: 8%;
+    }
+
+    
+
+
+
+
+}

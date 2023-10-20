@@ -88,8 +88,8 @@
     font-family: Jost;
     color: white;
     background-color: rgb(30,73,120);
-    width: 50%;
-    height: 28px;
+    width: 40%;
+    height: 23px;
     margin-left: 26%;
 }
 .main7:hover{
@@ -133,7 +133,7 @@
     color: white;
     background-color: rgb(30,73,120);
     width: 35%;
-    height: 28px;
+    height: 22px;
     font-size: 13px;
 }
 .main15:hover{
@@ -202,7 +202,7 @@
 .foot8{
     font-family: Jost;
     color: white;
-    background-color: rgb(30,73,120);
+    background-color: black;
     width: 27%;
     height: 30px;
     margin-left: 4%;
@@ -210,8 +210,8 @@
 }
 .foot8:hover{
     background-color: white;
-    color: rgb(30,73,120) ;
-    border: 1px solid  rgb(30,73,120);
+    color: black;
+    border: 1px solid  black;
 }
 .foot9{
     font-family: Jost;
@@ -221,12 +221,12 @@
 .foot10{
     margin-left: 2%;
     font-size: 20px;
-    color:rgb(30,73,120) ;
+    color:black ;
 }
 .foot11{
 
     font-size: 20px;
-    color:rgb(30,73,120) ;
+    color:black ;
 }
 .main21{
     transition: all .3s ease-in-out;

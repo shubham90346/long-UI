@@ -138,18 +138,18 @@
     }
 
     .ic1 {
-        margin-left: 31%;
-        color: rgb(30, 73, 120);
+        margin-left: 30% !important;
+        color:black;
     }
 
     .ic2 {
         margin-left: 55%;
-        color: rgb(30, 73, 120);
+        color: black;
     }
 
     .ic3 {
         margin-left: 64%;
-        color: rgb(30, 73, 120);
+        color: black;
     }
 
     .foot15 {
@@ -213,7 +213,7 @@
         font-family:Kanit;
         font-weight: 550;
         font-size: 18px;
-        background-color: rgb(138,38,38);
+        background-color: black;
         margin-top: -0.5%;
     }
 }

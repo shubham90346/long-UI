@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+ .ab1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+ .about3{
+    font-size: 15px;
+}
+.gallery {
+    font-weight: 370;
+    font-size: 18px;
+    background-color: black;
+    margin-top: 0%;
+}
+.hide7{
+    display: block;
+}
+
+
+
+}

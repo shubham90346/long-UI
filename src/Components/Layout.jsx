@@ -20,25 +20,29 @@ function Layout(props) {
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/homev2">
-                                HomeV2
+                            <Link className="nav-link" aria-current="page" to="/Shop">
+                                Shop
                             </Link>
 
                         </div>
                         <div className='lay3 text-secondary d-flex mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/homev3">
-                                HomeV3
+                            <Link className="nav-link" aria-current="page" to="/Gallery">
+                                Gallery
                             </Link>
 
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/homev4">
-                                HomeV4
+                            <Link className="nav-link" aria-current="page" to="/aboutus">
+                                About Us
                             </Link>
                         </div>
 
-                        <div className='lay3 text-secondary d-flex mt-1'>HomeV5
+                        <div className='lay3 text-secondary d-flex mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/customer">
+                               Customer
+                            </Link>
+
                             <div className='lay5 text-white text-center'>ACTIVE</div>
                         </div>
                         <div className='lay3 text-secondary d-flex mt-1'>HomeV6

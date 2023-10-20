@@ -43,7 +43,7 @@ function Main(props) {
         <div>
             {/* ---- HEADER------ */}
 
-            <div className=' d-flex head23'>
+            <div className=' d-flex head23' id='ttp'>
                 <p className=' head1'>SHELLA</p>
                 <div className='d-flex head2 mt-2'>
                     <CiSearch className='head3' />
@@ -548,6 +548,7 @@ function Main(props) {
             <div className='container'>
                 <div className='row footer1'>
                     <div className='col-lg-6 d-flex col-md-12 col-sm-12'>
+                        
                         <div className=''>
                             <p className='foot5'>SHOP</p>
                             <p className='foot3 text-secondary'>New</p>
@@ -696,7 +697,7 @@ function Main(props) {
                             <AiOutlineTwitter className='foot10' />
 
                         </div>
-                        <div className='foot18 mt-5 text-center'>TOP</div>
+                      
                     </div>
 
                 </div>
@@ -705,7 +706,9 @@ function Main(props) {
             </div>
 
 
-
+            <div className='top11'>
+                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#ttp'>TOP</a>
+            </div>
         </div>
     );
 }

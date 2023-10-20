@@ -9,23 +9,22 @@ import './Mob.css';
 import './Blog_css/Blog.css'
 import './Gallery_css/Gallery.css'
 import './About_css/About.css'
+import './Customer_css/Customer.css'
+import './Gallery_css/Gallery_Tablet.css'
+import './Gallery_css/Mob1.css';
+import './Gallery_css/Mob2.css';
+import './Gallery_css/Mob3.css';
+import './About_css/Tablet2.css';
+import './About_css/Mob11.css';
+import './About_css/Mob22.css';
+import './About_css/Mob33.css';
 import Home from './Components/Home';
-import Navigation from './Components/Navigation';
-import Layout from './Components/Layout';
-import Shop from './Components/Shop';
-import Women from './Components/Women';
-import Mens from './Components/Mens';
-import Header from './New_Components/Header';
-import Nav from './New_Components/Nav';
 import Main from './New_Components/Main';
-import Footer from './New_Components/Footer';
-import Blog_Header from './Blog_Components/Blog_Header';
-import Blog_Navigation from './Blog_Components/Blog_Navigation';
 import Blog_Home from './Blog_Components/Blog_Home';
-import Blog_Footer from './Blog_Components/Blog_Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Gallery from './Gallery_Components/Gallery';
 import About from './About_Components/About';
+import Customer from './Customer_Components/Customer';
 
 
 function App() {
@@ -36,19 +35,14 @@ function App() {
         {/* <Navigation /> */}
         <Routes>
           <Route path='/' element={< Home />}></Route>
-          <Route path='/homev1' element={<Main/>}></Route>
-          <Route path='/homev2' element={<Blog_Home/>}></Route>
-          <Route path='/homev3' element={<Gallery/>}></Route>
-          <Route path='/homev4' element={<About/>}></Route>
-     
-
+          <Route path='/homev1' element={<Main />}></Route>
+          <Route path='/shop' element={<Blog_Home />}></Route>
+          <Route path='/gallery' element={<Gallery />}></Route>
+          <Route path='/aboutus' element={<About />}></Route>
+          <Route path='/customer' element={<Customer />}></Route>
         </Routes>
       </BrowserRouter>
 
-
-
-
-     
 
     </div>
   );

@@ -1,0 +1,65 @@
+@media only screen and (max-width: 423px) and (min-width: 375px) {
+
+    .gallery {
+        font-weight: 300;
+        font-size: 14px;
+        background-color: black;
+        margin-top: 0%;
+    }
+
+    .hide1 {
+        display: none;
+    }
+
+    .hide2 {
+        display: block;
+    }
+
+    .b2 {
+        margin-top: 6%;
+        margin-left: 14%;
+    }
+    .mob2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .b3 {
+        font-size: 30px;
+        margin-left: 8%;
+    }
+    .hide3{
+        display: none;
+    }
+    .foot18{
+        font-family: Jost; 
+        color: white;
+        background-color: black;
+        font-size: 15px;
+        height: 24px;
+    }
+    .mob6{
+        margin-left: 39%;
+        color: black;
+    }
+    .mob4 {
+        margin-left: 40%;
+        color: black;
+    }
+    .mob3 {   
+        font-family: Jost;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 36%;
+    }
+    .hide4{
+        display: none;
+    }
+    .b11 {
+        font-size: 55px;
+        margin-left: 8%;
+    }
+
+}
