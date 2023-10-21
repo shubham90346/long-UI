@@ -8,7 +8,7 @@ function Layout(props) {
 
 
     return (
-        <div className=" container">
+        <div className="">
             <div className='row'>
                 <div className='d-flex col-lg-4'>
                     <div className='lay8' >
@@ -20,8 +20,8 @@ function Layout(props) {
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/Shop">
-                                Shop
+                            <Link className="nav-link" aria-current="page" to="/blog">
+                                Blog
                             </Link>
 
                         </div>

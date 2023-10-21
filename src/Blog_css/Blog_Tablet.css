@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .side1{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 370;
+    }
+    .side2{
+        font-size: 20px;
+     
+    }
+    .hide52{
+        display: block;
+    }
+    .hide54{
+        display: none;
+    }
+    .hide1{
+        display: block;
+    }
+    .hide55{
+        display: none;
+    }
+    .side5{
+        margin-top: -7%;
+    }
+    .foo8 {
+        margin-left: 3%;
+        font-size: 20px;
+    }
+
+
+
+}

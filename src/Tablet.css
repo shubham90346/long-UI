@@ -113,7 +113,11 @@
         display: none !important;
     }
     .navii3{
-        background-color: black !important;
+        font-family:Kanit;
+        font-weight: 500 !important;
+        font-size: 22px !important;
+        background-color: black;
+        margin-top: -0.5%;
     }
     
    

@@ -19,13 +19,14 @@
    
 }
 .head1{
-    font-family: Young Serif;
-   font-size: 34px;
+    /* font-family: Young Serif; */
+   font-size: 35px;
    font-weight: 500;
-   margin-left: 43%;
+   margin-left: 9%;
 }
 .head2{
-   margin-left: 27%;
+   margin-left: 67%;
+   
   
 }
 .head3{
@@ -37,7 +38,9 @@
     font-size: 20px;
 }
 .head5{
-    margin-top: -1.5%;
+    margin-top: -0.5%;
+
+
 }
 .navii1{
     margin-left: 2%;
@@ -270,4 +273,10 @@
  }
  .maj2{
     display: none ;
+ }
+ .main50{
+   justify-content: center;
+ }
+ .main51{
+    margin-top: -1.2%;
  }

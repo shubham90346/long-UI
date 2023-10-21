@@ -33,19 +33,29 @@ import Layout from '../Components/Layout';
 import Shop from '../Components/Shop';
 import Women from '../Components/Women';
 import Mens from '../Components/Mens';
+import {  useNavigate } from "react-router-dom";
 
 function Main(props) {
     const [active, IsActive] = useState(0);
     const [showText, setShowText] = useState(false);
     const [showTextt, setShowTextt] = useState(false);
     const [showText1, setShowText1] = useState(false);
+
+    const navigate = useNavigate();
+ 
+    const handleclick=()=>{
+        navigate('/')
+
+    }
+
     return (
         <div>
             {/* ---- HEADER------ */}
 
             <div className=' d-flex head23' id='ttp'>
-                <p className=' head1'>SHELLA</p>
-                <div className='d-flex head2 mt-2'>
+                {/* <p className=' head1' onClick={handleclick}>SHELLA</p> */}
+                <h5 className='head1  mt-2 navi1' onClick={handleclick}> <i className='navic'>Shella</i></h5>
+                <div className='d-flex head2 mt-1'>
                     <CiSearch className='head3' />
                     <HiOutlineShoppingBag className='head3' />
                     <p className='head4 mt-1'>Bag(0)</p>
@@ -56,273 +66,266 @@ function Main(props) {
 
             {/* -----NAVIGATION BAR----- */}
 
-            <div className='container navii2'>
-                <nav class="navbar navbar-expand-lg navbar-light navv3 ">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+
+            <div className='main51' >
+                <p className='navii3 text-center text-white '>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
+            </div>
+
+
+            <div className='container hide1'>
+                <nav className="navbar navbar-expand-lg navbar-light main50">
+                    <div className="">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav  mb-2 mb-lg-0 navv2">
-                                <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">NEW</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav  mb-lg-0  a6" >
+
+                                <li className="nav-item a2 ">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
+                                        LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
+                                </li>
+                                <li className="nav-item a1 ">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: 'black ' } : { color: ' rgb(113, 107, 110)' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        CLOTHING
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                        <li><a class="dropdown-item" href="#">Polo Suits</a></li>
 
-                                        <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                        <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        SHOES
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                        <li><a class="dropdown-item" href="#">Polo Suits</a></li>
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: 'black' } : { color: ' rgb(113, 107, 110)' }}>
+                                        <a className="nav-link d-flex" href="#">BLOG<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
+                                            <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
+                                            <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
+                                            <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
+                                            <a href="#" className='tab5 text-secondary'>Single Post</a>
 
-                                        <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                        <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        ACCESSORIES
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                        <li><a class="dropdown-item" href="#">Polo Suits</a></li>
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' black' } : { color: 'rgb(113, 107, 110)' }}>
+                                        <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
+                                            <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
+                                            <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
+                                            <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
+                                            <a href="#" className='tab5 text-secondary'>Single </a>
 
-                                        <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                        <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        BUYNON!
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Back To Main</a></li>
 
-                                    </ul>
+                                <li className="nav-item a1 ">
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
+                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <div class="dropdown-content">
+                                            <a href="#" className='tab4 text-secondary'>About Us</a>
+                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
+                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
+                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
+                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
+                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
+                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
+                                            <a href="#" className='tab5 text-secondary'>Icons</a>
+                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
+                                        </div>
+                                    </div>
                                 </li>
+
+                                <li className="nav-item a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: 'black ' } : { color: ' rgb(113, 107, 110)' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+                                <li className="nav-item a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: 'black  ' } : { color: 'rgb(113, 107, 110)' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                </li>
+                                <li className="nav-item  a1">
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: 'black  ' } : { color: 'rgb(113, 107, 110)' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span>  <div className='tab7 text-white text-center mt-1'>SALE</div></a>
+                                </li>
+
 
                             </ul>
 
                         </div>
                     </div>
                 </nav>
-
-
-
-                <div className='nav-2 d-flex'>
-                    <nav class="navbar navbar-expand-lg navbar-light  navig1 ">
-                        <div class="container-fluid">
-
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav  mb-2 mb-lg-0 navv2">
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="#">NEW</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            CLOTHING
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                            <li><a class="dropdown-item" href="#">Polo Suits</a></li>
-
-                                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                            <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                            <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                            <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            SHOES
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                            <li><a class="dropdown-item" href="#">Polo Suits</a></li>
-
-                                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                            <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                            <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                            <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ACCESSORIES
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Dressess & Jumpsuits</a></li>
-                                            <li><a class="dropdown-item" href="#">Polo Suits</a></li>
-
-                                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                                            <li><a class="dropdown-item" href="#">Sweaters</a></li>
-                                            <li><a class="dropdown-item" href="#">Blazer</a></li>
-                                            <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            BUYNON!
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Back To Main</a></li>
-
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                    </nav>
-                    <p className=' head11 navig1'>SHELLA</p>
-                    <div className='d-flex head22 mt-2'>
-                        <HiOutlineShoppingBag className='head33 navig1' />
-
-                    </div>
-                </div>
-            </div>
-
-            {/* <div className=' '>
-                <div className=''>
-                    <video width="100%" height="" preload='none' muted playsInline autoPlay loop className=''>
-                        <source src="https://cdn.shopify.com/s/files/1/0264/8817/6717/files/pexels-cottonbro-9512045.mp4?v=1637151689" type='video/mp4' />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div className='nav1 d-flex text-white'>
-                    <h5 className='text-white nav2 mt-2'> <i className='navic'>Shella</i></h5>
-                    <div className='nav3  d-flex mt-2 '>
-                        <div className='nav4 ' onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className=' nav4 d-flex text-black'>LAYOUTS<span className='nav9'><IoIosArrowDown /></span> </p>
-                        </div>
-
-                        <div className='nav5' onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex'>SHOP  <span className='nav9'><IoIosArrowDown /></span></p>
-                        </div>
-
-                        <div className='nav5 dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex dropbtn' >BLOG  <span className='nav9'><IoIosArrowDown /></span> </p>
-                            <div class="dropdown-content">
-                                <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
-                                <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
-                                <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
-                                <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
-                                <a href="#" className='tab5 text-secondary'>Single Post</a>
-
-                            </div>
-                        </div>
-
-                        <div className='nav5 dropdown' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex dropbtn'>GALLERY  <span className='nav9'><IoIosArrowDown /></span></p>
-                            <div class="dropdown-content">
-                                <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
-                                <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
-                                <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
-                                <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
-                                <a href="#" className='tab5 text-secondary'>Single </a>
-
-                            </div>
-                        </div>
-
-                        <div className='nav5 dropdown' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex dropbtn'>PAGES  <span className='nav9'><IoIosArrowDown /></span></p>
-                            <div class="dropdown-content">
-                                <a href="#" className='tab4 text-secondary'>About Us</a>
-                                <a href="#" className='tab5  text-secondary'>Customer Service</a>
-                                <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
-                                <a href="#" className='tab5 text-secondary'>FAQ's</a>
-                                <a href="#" className='tab5 text-secondary'>Contact us</a>
-                                <a href="#" className='tab5 text-secondary'>Coming Soon</a>
-                                <a href="#" className='tab5 text-secondary'>Page 404</a>
-                                <a href="#" className='tab5 text-secondary'>Icons</a>
-                                <a href="#" className='tab5 text-secondary'>Documentations</a>
-
-
-                            </div>
-                        </div>
-
-                        <div className='nav5' onMouseOver={() => IsActive(6)} style={active === 6 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex'>WOMEN'S  <span className='nav9'><IoIosArrowDown /></span></p>
-                        </div>
-
-                        <div className='nav5' onMouseOver={() => IsActive(7)} style={active === 7 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex'>MEN'S  <span className='nav9'><IoIosArrowDown /></span></p>
-                        </div>
-
-                        <div className='nav5' onMouseOver={() => IsActive(8)} style={active === 8 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                            <p className='nav5 d-flex'> BUYNOW!<span className='nav9'><IoIosArrowDown /></span>  <div className='tab7 text-white text-center mt-1'>SALE</div></p>
-
-                        </div>
-
-                    </div>
-                    <div className=' tab1'>
-                        {
-                            active == 1 && <>
-
+                <div className=' a4'>
+                    {
+                        active == 1 && <>
+                            <div className='container-fluid' onMouseLeave={() => IsActive(0)}>
                                 <Layout />
-                            </>
-                        }
-                        {
-                            active == 2 && <>
+                            </div>
+
+                        </>
+                    }
+                    {
+                        active == 2 && <>
+                            <div onMouseLeave={() => IsActive(0)}>
                                 <Shop />
-                            </>
-                        }
-                        {
-                            active == 6 && <>
+                            </div>
+
+                        </>
+                    }
+                    {
+                        active == 6 && <>
+                            <div onMouseLeave={() => IsActive(0)}>
                                 <Women />
-                            </>
-                        }
-                        {
-                            active == 7 && <>
+                            </div>
+
+                        </>
+                    }
+                    {
+                        active == 7 && <>
+                            <div onMouseLeave={() => IsActive(0)}>
                                 <Mens />
-                            </>
-                        }
+                            </div>
+
+                        </>
+                    }
 
 
+                </div>
+            </div>
+            <hr className='navi3 hide1'></hr>
+
+
+
+            {/* NAVIGATION RESPONSIVE */}
+
+            <div className='container-fluid hide2'>
+                <div className='row b4 '>
+                    <div className='col-md-6 col'>
+                        <div className='d-flex'>
+                            <div className=' '>
+                                <nav className="navbar navbar-expand-lg navbar-light">
+                                    <div className="">
+                                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span className="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul className="navbar-nav  mb-lg-0  a6" >
+
+                                                <li className="nav-item a2 ">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
+                                                        LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
+                                                </li>
+                                                <li className="nav-item a1 ">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+
+
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
+                                                            <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
+                                                            <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
+                                                            <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
+                                                            <a href="#" className='tab5 text-secondary'>Single Post</a>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
+                                                            <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
+                                                            <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
+                                                            <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
+                                                            <a href="#" className='tab5 text-secondary'>Single </a>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li className="nav-item a1 ">
+                                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
+                                                        <div class="dropdown-content">
+                                                            <a href="#" className='tab4 text-secondary'>About Us</a>
+                                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
+                                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
+                                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
+                                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
+                                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
+                                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
+                                                            <a href="#" className='tab5 text-secondary'>Icons</a>
+                                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li className="nav-item a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+                                                <li className="nav-item a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+                                                <li className="nav-item  a1">
+                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
+                                                </li>
+
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div className=' a4'>
+                                    {
+                                        active == 1 && <>
+
+                                            <Layout />
+                                        </>
+                                    }
+                                    {
+                                        active == 2 && <>
+                                            <Shop />
+                                        </>
+                                    }
+                                    {
+                                        active == 6 && <>
+                                            <Women />
+                                        </>
+                                    }
+                                    {
+                                        active == 7 && <>
+                                            <Mens />
+                                        </>
+                                    }
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div className='b2'>
+                                <SiSwiper className='b1' />
+                            </div>
+                        </div>
                     </div>
 
 
-                    <div className='d-flex nav6'>
-                        <CiSearch className='nav7' onMouseOver={() => IsActive(9)} style={active === 9 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <GoQuestion className='nav7' onMouseOver={() => IsActive(10)} style={active === 10 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <GoPerson className='nav7' onMouseOver={() => IsActive(11)} style={active === 11 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <BsHeart className='nav7' onMouseOver={() => IsActive(12)} style={active === 12 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <LiaBalanceScaleSolid className="nav7" onMouseOver={() => IsActive(13)} style={active === 13 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <HiOutlineShoppingBag className='nav7' onMouseOver={() => IsActive(14)} style={active === 14 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
-                        <p className='nav8' onMouseOver={() => IsActive(15)} style={active === 15 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>Bag(0)</p>
+                    <div className='col-md-6 col d-flex justify-content-end '>
+                        <CiSearch className='b3 mt-3' />
+                        <GoQuestion className='b3 mt-3' />
+                        <GoPerson className='b3 mt-3' />
+                        <BsHeart className='b3 mt-3' />
+                        <HiOutlineShoppingBag className='b3 mt-3 ' />
+
                     </div>
 
                 </div>
 
-            </div> */}
-
-            <div >
-                <p className='navii3 text-center text-white '>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
             </div>
+            <hr className='navi3 hide7'></hr>
+
+
 
 
 
@@ -548,7 +551,7 @@ function Main(props) {
             <div className='container'>
                 <div className='row footer1'>
                     <div className='col-lg-6 d-flex col-md-12 col-sm-12'>
-                        
+
                         <div className=''>
                             <p className='foot5'>SHOP</p>
                             <p className='foot3 text-secondary'>New</p>
@@ -697,7 +700,7 @@ function Main(props) {
                             <AiOutlineTwitter className='foot10' />
 
                         </div>
-                      
+
                     </div>
 
                 </div>

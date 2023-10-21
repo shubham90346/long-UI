@@ -20,10 +20,9 @@ import Women from './Women';
 import Mens from './Mens';
 
 function Home(props) {
-    
+
     const [active, IsActive] = useState(0);
-    const [isHovered, setIsHovered] = useState(false);
-    console.log(isHovered)
+
 
     return (
         <div>
@@ -45,7 +44,10 @@ function Home(props) {
                 <div className='nav1 d-flex text-white'>
                     <h5 className='text-white nav2 mt-2'> <i className='navic'>Shella</i></h5>
                     <div className='nav3  d-flex mt-2 '>
-                        <div className='nav4 ' onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
+                        <div className='nav4 '
+                            onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}
+
+                        >
                             <p className=' nav4 d-flex'>LAYOUTS<span className='nav9'><IoIosArrowDown /></span> </p>
                         </div>
 
@@ -53,7 +55,10 @@ function Home(props) {
                             <p className='nav5 d-flex'>SHOP  <span className='nav9'><IoIosArrowDown /></span></p>
                         </div>
 
-                        <div className='nav5 dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                        <div className='nav5 dropdown '
+                            onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}
+                            onMouseLeave={() => IsActive(0)}
+                        >
                             <p className='nav5 d-flex dropbtn' >BLOG  <span className='nav9'><IoIosArrowDown /></span> </p>
                             <div class="dropdown-content">
                                 <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
@@ -65,7 +70,10 @@ function Home(props) {
                             </div>
                         </div>
 
-                        <div className='nav5 dropdown' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                        <div className='nav5 dropdown'
+                            onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}
+                            onMouseLeave={() => IsActive(0)}
+                        >
                             <p className='nav5 d-flex dropbtn'>GALLERY  <span className='nav9'><IoIosArrowDown /></span></p>
                             <div class="dropdown-content">
                                 <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
@@ -77,7 +85,10 @@ function Home(props) {
                             </div>
                         </div>
 
-                        <div className='nav5 dropdown' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                        <div className='nav5 dropdown'
+                            onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}
+                            onMouseLeave={() => IsActive(0)}
+                        >
                             <p className='nav5 d-flex dropbtn'>PAGES  <span className='nav9'><IoIosArrowDown /></span></p>
                             <div class="dropdown-content">
                                 <a href="#" className='tab4 text-secondary'>About Us</a>
@@ -102,33 +113,48 @@ function Home(props) {
                             <p className='nav5 d-flex'>MEN'S  <span className='nav9'><IoIosArrowDown /></span></p>
                         </div>
 
-                        <div className='nav5' onMouseOver={() => IsActive(8)} style={active === 8 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                        <div className='nav5'
+                            onMouseOver={() => IsActive(8)} style={active === 8 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}
+                            onMouseLeave={() => IsActive(0)}
+                        >
                             <p className='nav5 d-flex'> BUYNOW!<span className='nav9'><IoIosArrowDown /></span>  <div className='tab7 text-white text-center mt-1'>SALE</div></p>
 
                         </div>
 
                     </div>
-                    
+
                     <div className=' tab1'>
                         {
                             active == 1 && <>
+                                <div className='container' onMouseLeave={() => IsActive(0)}>
+                                    <Layout />
 
-                                <Layout />
+                                </div>
+
                             </>
                         }
                         {
                             active == 2 && <>
-                                <Shop />
+                                <div onMouseLeave={() => IsActive(0)}>
+                                    <Shop />
+                                </div>
+
                             </>
                         }
                         {
                             active == 6 && <>
-                                <Women />
+                                <div onMouseLeave={() => IsActive(0)}>
+                                    <Women />
+                                </div>
+
                             </>
                         }
                         {
                             active == 7 && <>
-                                <Mens />
+                                <div onMouseLeave={() => IsActive(0)}>
+                                    <Mens />
+                                </div>
+
                             </>
                         }
 

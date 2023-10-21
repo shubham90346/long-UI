@@ -56,6 +56,7 @@
         font-size: 35px !important;
         font-family: Young Serif;
         margin-top: -15%;
+        display: block !important;
     }
 
     .main6 {
@@ -212,7 +213,7 @@
      .navii3{
         font-family:Kanit;
         font-weight: 550;
-        font-size: 18px;
+        font-size: 13px !important;
         background-color: black;
         margin-top: -0.5%;
     }

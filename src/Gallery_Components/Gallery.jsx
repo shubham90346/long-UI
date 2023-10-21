@@ -35,16 +35,22 @@ import { FaCcPaypal } from 'react-icons/fa';
 import { LiaCcDiscover } from 'react-icons/lia';
 import { FaCcAmazonPay } from 'react-icons/fa';
 import { BsPlus } from 'react-icons/bs'
+import {  useNavigate } from "react-router-dom";
 
 
 function Gallery(props) {
     const [active, IsActive] = useState(0);
-    const [isHovered, setIsHovered] = useState(false);
-    console.log(isHovered)
     const [showText, setShowText] = useState(false);
     const [showTextt, setShowTextt] = useState(false);
     const [showText1, setShowText1] = useState(false);
     const [showText11, setShowText11] = useState(false);
+
+    const navigate = useNavigate();
+ 
+    const handleclik=()=>{
+        navigate('/')
+
+    }
 
     return (
         <div className=''>
@@ -58,7 +64,7 @@ function Gallery(props) {
 
             <div className='container hide1'>
                 <div className='row gallery1' id='heades'>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-6' onClick={handleclik}>
                         <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
                     </div>
 
@@ -91,17 +97,17 @@ function Gallery(props) {
                             <ul className="navbar-nav  mb-lg-0  a6" >
 
                                 <li className="nav-item a2 ">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: 'black ' } : { color: ' rgb(113, 107, 110)' }}>
                                         LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
                                 </li>
                                 <li className="nav-item a1 ">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: 'black' } : { color: 'rgb(113, 107, 110)' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
 
 
                                 <li className="nav-item a1 ">
-                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                                        <a className="nav-link d-flex" href="#">SHOP <span className='nav9'><IoIosArrowDown /></span></a>
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
+                                        <a className="nav-link d-flex" href="#">BLOG<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
                                             <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
                                             <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
@@ -113,7 +119,7 @@ function Gallery(props) {
                                     </div>
                                 </li>
                                 <li className="nav-item a1 ">
-                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
                                         <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
                                             <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
@@ -127,7 +133,7 @@ function Gallery(props) {
                                 </li>
 
                                 <li className="nav-item a1 ">
-                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
+                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black' } : { color: ' rgb(113, 107, 110)' }}>
                                         <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
                                             <a href="#" className='tab4 text-secondary'>About Us</a>
@@ -144,13 +150,16 @@ function Gallery(props) {
                                 </li>
 
                                 <li className="nav-item a1">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: 'black  ' } : { color: 'rgb(113, 107, 110)' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
                                 <li className="nav-item a1">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
+                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: ' black ' } : { color: 'rgb(113, 107, 110)' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
                                 <li className="nav-item  a1">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
+                                    <a className="nav-link d-flex" href="#" 
+                                    onMouseOver={() => IsActive(8)} style={active === 8 ? { color: 'black ' } : { color: ' rgb(113, 107, 110)' }}
+                                    onMouseLeave={() => IsActive(0)}
+                                    >BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
 
 
@@ -162,23 +171,35 @@ function Gallery(props) {
                 <div className=' a4'>
                     {
                         active == 1 && <>
+                            <div onMouseLeave={() => IsActive(0)}>
+                                <Layout />
+                            </div>
 
-                            <Layout />
+
                         </>
                     }
                     {
                         active == 2 && <>
-                            <Shop />
+                            <div onMouseLeave={() => IsActive(0)}>
+                                <Shop />
+                            </div>
+
                         </>
                     }
                     {
                         active == 6 && <>
-                            <Women />
+                            <div onMouseLeave={() => IsActive(0)}>
+                                <Women />
+                            </div>
+
                         </>
                     }
                     {
                         active == 7 && <>
-                            <Mens />
+                            <div onMouseLeave={() => IsActive(0)}>
+                                <Mens />
+                            </div>
+
                         </>
                     }
 
@@ -573,18 +594,18 @@ function Gallery(props) {
 
                 </div>
             </div>
-  
 
-                {/* responsive small */}
+
+            {/* responsive small */}
 
 
             <div className='row f11'>
                 <div className='col-sm-12 '>
                     <div className=''>
-                    <p className='foot5  text-center'>NEWSLETTER SUBSCRIPTION</p>
-                    <p className='foot6 text-secondary text-center'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
+                        <p className='foot5  text-center'>NEWSLETTER SUBSCRIPTION</p>
+                        <p className='foot6 text-secondary text-center'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
                     </div>
-                  
+
                 </div>
 
                 <div className='col-sm-12'>
@@ -607,11 +628,11 @@ function Gallery(props) {
 
                 </div>
             </div>
-            
+
 
             <div className='row footer3 mt-4'>
                 <div className='col-sm-12'>
-                <hr className=''></hr>
+                    <hr className=''></hr>
                     <div className='' onClick={() => setShowText(!showText)}
                     //  {active === 1 ? setShowText(!showText)  : ""}
 
@@ -699,7 +720,7 @@ function Gallery(props) {
 
                             </>
                         }
-                               <hr className=''></hr>
+                        <hr className=''></hr>
                     </div>
                 </div>
             </div>
@@ -763,7 +784,7 @@ function Gallery(props) {
             </div>
 
             <div className='top11'>
-              <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tp'>TOP</a>
+                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tp'>TOP</a>
             </div>
 
 
