@@ -8,10 +8,10 @@ function Layout(props) {
 
 
     return (
-        <div className="">
+        <div className="container">
             <div className='row'>
-                <div className='d-flex col-lg-4'>
-                    <div className='lay8' >
+                <div className=' col-lg-2'>
+                    <div className='' >
                         <p className='text-black text-black lay1  mt-4 '>LAYOUTS</p>
                         <div className='text-secondary lay2 d-flex mt-1'>
                             <Link className="nav-link" aria-current="page" to="/homev1">
@@ -40,7 +40,7 @@ function Layout(props) {
 
                         <div className='lay3 text-secondary d-flex mt-1'>
                             <Link className="nav-link" aria-current="page" to="/customer">
-                               Customer
+                                Customer
                             </Link>
 
                             <div className='lay5 text-white text-center'>ACTIVE</div>
@@ -76,8 +76,12 @@ function Layout(props) {
 
 
                     </div>
+                </div>
 
-                    <div className='lay9 ' >
+
+                <div className='col-lg-2'>
+
+                    <div className='' >
                         <p className='text-black text-black lay1  mt-4 '>SKINS</p>
                         <div className='text-secondary lay2 d-flex'>SKIN1-<span> Boutique</span>
 
@@ -109,37 +113,38 @@ function Layout(props) {
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN11-<span>Christmas</span></div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN12-<span>Cannabis</span>
-                            <div className='lay4 text-white text-center d-flex'>HOT</div>
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                          
                         </div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN13-<span>Wine</span>
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                            <div className='lay10 text-white text-center '>NEW</div>
                         </div>
 
-                        <div className='lay2 text-secondary d-flex mt-1'>SKIN14- <span>FoodDelivery</span>
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                        <div className='lay2 text-secondary  mt-1'>SKIN14- <span>FoodDelivery</span>
+                         
                         </div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN15-<span>Lenses</span>
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                            <div className='lay10 text-white text-center'>NEW</div>
                         </div>
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN16-<span>Cakes</span>
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                            <div className='lay10 text-white text-center '>NEW</div>
                         </div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN17-<span>Plants</span>
 
-                            <div className='lay10 text-white text-center d-flex'>NEW</div>
+                            <div className='lay10 text-white text-center '>NEW</div>
                         </div>
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN18-<span>Pasta</span>
 
-                            <div className='lay10 text-white text-center  d-flex'> NEW</div>
+                            <div className='lay10 text-white text-center  '> NEW</div>
                         </div>
 
 
                     </div>
                 </div>
+
+
 
 
                 <div className=' col-lg-8'>

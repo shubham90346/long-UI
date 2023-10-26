@@ -1,0 +1,106 @@
+.new1 {
+    position: relative;
+}
+
+.new2 {
+    position: absolute;
+    top: 0;
+
+
+
+}
+
+
+.new4 {
+    background-color: white;
+    width: 120%;
+}
+
+.new3 {
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.new5 {
+    width: 109%;
+    background-color: white;
+}
+.new6{
+    margin-left: 18%;
+    margin-top: 1%;
+}
+.new7{
+    margin-left: 7%;
+    font-size: 38px;;
+    color: white;
+}
+.new8{
+    font-size: 14px;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.new9{
+    font-weight: 500;
+    font-size: 23px;
+    margin-left: 5%;
+    margin-top: 1.3%;
+
+}
+.new11 {
+    background-color: #151214;
+    /* position: absolute; */
+    /* margin-bottom: 0%; */
+    width: 100%;
+    margin-top: -0.4%;
+}
+
+/* 
+.hom92 {
+    margin-left: 20%;
+
+} */
+
+.new12 {
+    margin-left: 10%;
+    font-size: 38px;
+}
+.new13 {
+    /* width: 100%;
+    height: 320px; */
+    
+ 
+}
+.new14{
+    width: 100% !important;
+}
+.new20{
+    display: none;
+}
+
+.new26 {
+    margin-bottom: -7%;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.new29 {
+    margin-bottom: 4%;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.new28 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.new30 {
+    position: absolute;
+    top: 0;
+    margin-top: 20%;
+    margin-left: 40%;
+}
+.r1{
+    display: none;
+}
+

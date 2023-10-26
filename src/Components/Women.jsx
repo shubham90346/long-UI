@@ -7,7 +7,7 @@ import w2 from '../ww2.jpg';
 function Women(props) {
     return (
         <div>
-            <div className='container'>
+            <div className='container ipl'>
                 <div className='row'>
                     <div className='col-lg-2 mt-4 '>
                         <div className=''>

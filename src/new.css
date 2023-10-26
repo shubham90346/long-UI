@@ -2,207 +2,251 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Bebas+Neue&family=Caveat:wght@600&family=Pacifico&family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Bebas+Neue&family=Caveat:wght@600&family=Kanit&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Bebas+Neue&family=Caveat:wght@600&family=Jost&display=swap');
-.head11{
-     font-family: Young Serif;
+
+.head11 {
+    font-family: Young Serif;
     font-size: 34px;
     font-weight: 500;
     margin-left: 43%;
-   
+
 }
-.head22{
+
+.head22 {
     margin-left: 27%;
-   
+
 }
-.head33{
+
+.head33 {
     margin-left: 14%;
     font-size: 42px;
-   
+
 }
-.head1{
+
+.head1 {
     /* font-family: Young Serif; */
-   font-size: 35px;
-   font-weight: 500;
-   margin-left: 9%;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 9%;
 }
-.head2{
-   margin-left: 67%;
-   
-  
+
+.head2 {
+    margin-left: 67%;
+
+
 }
-.head3{
-   margin-left: 14%;
-   font-size: 42px;
+
+.head3 {
+    margin-left: 14%;
+    font-size: 42px;
 }
-.head4{
+
+.head4 {
     margin-left: 8%;
     font-size: 20px;
 }
-.head5{
+
+.head5 {
     margin-top: -0.5%;
 
 
 }
-.navii1{
+
+.navii1 {
     margin-left: 2%;
     font-weight: 400;
     font-size: 15px;
 }
-.navii2{
+
+.navii2 {
     margin-top: -7px;
 }
-.navii3{
-    font-family:Kanit;
+
+.navii3 {
+    font-family: Kanit;
     font-weight: 550;
     font-size: 24px;
     background-color: black;
     margin-top: -0.5%;
 }
-.main1{
+
+.main1 {
     width: 100%;
 }
-.main2{
+
+.main2 {
     position: relative;
 }
-.main3{
+
+.main3 {
     position: absolute;
     top: 0;
     margin-top: 16%;
     margin-left: 22%;
 }
-.man1{
+
+.man1 {
     display: none !important;
 }
-.m1{
+
+.m1 {
     display: block !important;
 }
-.main4{
+
+.main4 {
     font-size: 55px;
     font-family: Young Serif;
 }
-.main5{
+
+.main5 {
     font-size: 55px !important;
     font-family: Young Serif;
     margin-top: -6%;
 }
-.main6{  
+
+.main6 {
     margin-top: -5%;
 }
-.main7{
+
+.main7 {
     font-family: Jost;
     color: white;
-    background-color: rgb(30,73,120);
+    background-color: rgb(30, 73, 120);
     width: 40%;
     height: 23px;
     margin-left: 26%;
 }
-.main7:hover{
+
+.main7:hover {
     background-color: white;
-    color: rgb(30,73,120) ;
-    border: 1px solid  rgb(30,73,120);
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
 }
-.main8{
+
+.main8 {
     font-family: Jost;
-    font-size: 20px; 
+    font-size: 20px;
 }
-.main9{
-    font-family: Young Serif ;
+
+.main9 {
+    font-family: Young Serif;
     font-size: 16px;
 }
-.main10{
+
+.main10 {
     font-size: 14px;
 }
-.main9:hover{
+
+.main9:hover {
     text-decoration: underline;
 }
-.main11{
+
+.main11 {
     position: relative;
 }
-.main12{
+
+.main12 {
     position: absolute;
-    top:0%;
+    top: 0%;
     margin-top: 22%;
     margin-left: 16%;
 }
-.main13{
-    font-family: Young Serif ;
+
+.main13 {
+    font-family: Young Serif;
 }
-.main14{
+
+.main14 {
     font-family: Jost;
     font-size: 18px;
     margin-top: 5%;
 }
-.main15{
+
+.main15 {
     font-family: Jost;
     color: white;
-    background-color: rgb(30,73,120);
+    background-color: rgb(30, 73, 120);
     width: 35%;
     height: 22px;
     font-size: 13px;
 }
-.main15:hover{
+
+.main15:hover {
     background-color: white;
-    color: rgb(30,73,120) ;
-    border: 1px solid  rgb(30,73,120);
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
 }
-.main16{
+
+.main16 {
     font-family: Jost;
     color: white;
-    background-color: rgb(30,73,120);
+    background-color: rgb(30, 73, 120);
     width: 60%;
     height: 28px;
     font-size: 13px;
 }
-.main16:hover{
+
+.main16:hover {
     background-color: white;
-    color: rgb(30,73,120) ;
-    border: 1px solid  rgb(30,73,120);
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
 }
-.main17{
+
+.main17 {
     width: 100%;
 
 }
-.main18{
-    font-family: Young Serif ;
+
+.main18 {
+    font-family: Young Serif;
     font-size: 23px;
 
 }
-.main19{
+
+.main19 {
     font-size: 13px;
     text-decoration: underline;
 }
-.main19:hover{
+
+.main19:hover {
     text-decoration: none;
 }
 
-.foot1{
+.foot1 {
     margin-left: 22%;
 }
-.foot2{
+
+.foot2 {
     margin-left: 10%;
 }
-.foot3{
+
+.foot3 {
     margin-top: -15%;
     font-family: Jost;
     font-size: 13px;
 }
-.foot4{
+
+.foot4 {
     margin-top: -8%;
     font-family: Jost;
     font-size: 13px;
 }
-.foot5{
+
+.foot5 {
     font-family: Jost;
-    font-size: 20px; 
+    font-size: 20px;
 }
-.foot6{
-    font-family: Jost; 
+
+.foot6 {
+    font-family: Jost;
     font-size: 13px;
     margin-top: -2%;
 }
-.foot7{
+
+.foot7 {
     width: 65%;
 }
-.foot8{
+
+.foot8 {
     font-family: Jost;
     color: white;
     background-color: black;
@@ -211,72 +255,139 @@
     margin-left: 4%;
     font-size: 15px;
 }
-.foot8:hover{
+
+.foot8:hover {
     background-color: white;
     color: black;
-    border: 1px solid  black;
+    border: 1px solid black;
 }
-.foot9{
+
+.foot9 {
     font-family: Jost;
     font-weight: 500;
     font-size: 17px;
 }
-.foot10{
+
+.foot10 {
     margin-left: 2%;
     font-size: 20px;
-    color:black ;
+    color: black;
 }
-.foot11{
+
+.foot11 {
 
     font-size: 20px;
-    color:black ;
+    color: black;
 }
-.main21{
+
+.main21 {
     transition: all .3s ease-in-out;
 }
-.main21:hover{
+
+.main21:hover {
     transform: scale(1.1);
     opacity: 0.3;
 }
-.main22{
+
+.main22 {
     overflow: hidden;
 }
-.main23{
+
+.main23 {
     width: 100%;
 }
-.navv2{
+
+.navv2 {
     margin-left: 30%;
 }
-.m11{
+
+.m11 {
     display: none;
 }
-.m12{
+
+.m12 {
     display: none;
 }
-.m13{
+
+.m13 {
     display: none;
 }
-.navig1{
+
+.navig1 {
     display: none;
 }
-.f11{
+
+.f11 {
     display: none;
 }
-.footer3{
+
+.footer3 {
     display: none;
 }
-.footer5{
+
+.footer5 {
     display: none;
 }
-.maj1{
-    display: none ;
- }
- .maj2{
-    display: none ;
- }
- .main50{
-   justify-content: center;
- }
- .main51{
+
+.maj1 {
+    display: none;
+}
+
+.maj2 {
+    display: none;
+}
+
+.main50 {
+    justify-content: center;
+}
+
+.main51 {
     margin-top: -1.2%;
- }
+}
+
+.mn50 {
+    color: white;
+    background-color: rgb(30, 73, 120);
+    width: 30%;
+    height: 21px;
+    font-size: 14px;
+}
+
+.mn50:hover {
+    background-color: white;
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
+}
+
+.mn51 {
+    font-family: Jost;
+    margin-left: 5%;
+}
+
+.mn501 {
+    color: white;
+    background-color: rgb(30, 73, 120);
+    width: 52%;
+    height: 21px;
+    font-size: 14px;
+}
+
+.mn501:hover {
+    background-color: white;
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
+}
+
+.mn5001 {
+    color: white;
+    background-color: rgb(30, 73, 120);
+    width: 28%;
+    height: 21px;
+    font-size: 14px;
+}
+
+.mn5001:hover {
+    background-color: white;
+    color: rgb(30, 73, 120);
+    border: 1px solid rgb(30, 73, 120);
+}

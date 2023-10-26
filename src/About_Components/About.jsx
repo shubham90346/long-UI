@@ -26,7 +26,12 @@ import Mens from '../Components/Mens';
 import Layout from '../Components/Layout';
 import Shop from '../Components/Shop';
 import { BsPlus } from 'react-icons/bs'
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { IoIosArrowForward } from 'react-icons/io'
+import { BsSearch } from 'react-icons/bs'
+import { RiMenuSearchLine } from 'react-icons/ri'
+import { Link } from "react-router-dom";
+import { BsArrowUp } from 'react-icons/bs';
 
 function About(props) {
     const [active, IsActive] = useState(0);
@@ -34,10 +39,17 @@ function About(props) {
     const [showTextt, setShowTextt] = useState(false);
     const [showText1, setShowText1] = useState(false);
     const [showText11, setShowText11] = useState(false);
+    const [show, setShow] = useState(false);
+    const [show1, setShow1] = useState(false);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
+    const [show6, setShow6] = useState(false);
 
     const navigate = useNavigate();
- 
-    const handleclick=()=>{
+
+    const handleclick = () => {
         navigate('/')
 
     }
@@ -138,9 +150,9 @@ function About(props) {
                                     <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: ' black' } : { color: ' rgb(113, 107, 110)' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
                                 <li className="nav-item  a1">
-                                    <a className="nav-link d-flex" href="#" 
-                                    onMouseOver={() => IsActive(8)} style={active === 8 ? { color: 'black  ' } : { color: 'rgb(113, 107, 110)' }}
-                                    onMouseLeave={() => IsActive(0)}    
+                                    <a className="nav-link d-flex" href="#"
+                                        onMouseOver={() => IsActive(8)} style={active === 8 ? { color: 'black  ' } : { color: 'rgb(113, 107, 110)' }}
+                                        onMouseLeave={() => IsActive(0)}
                                     >BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
                                 </li>
 
@@ -193,7 +205,7 @@ function About(props) {
 
             {/* NAVIGATION RESPONSIVE */}
 
-            <div className='container-fluid hide2'>
+            {/* <div className='container-fluid hide2'>
                 <div className='row b4 '>
                     <div className='col-md-6 col'>
                         <div className='d-flex'>
@@ -322,7 +334,542 @@ function About(props) {
 
                 </div>
 
+            </div> */}
+
+
+
+            <div className=' hide2'>
+
+                <div className=' '>
+                    <div className='mkk1'>
+                        <div className='d-flex '>
+                            <a className="btn new21" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <RiMenuSearchLine />
+                            </a>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                <div className=''>
+                                    <div className='d-flex'>
+                                        <input type="text" value="Search Product..." className='off1' />
+                                        <BsSearch className='off3' />
+                                    </div>
+                                    <hr className='off2'></hr>
+
+
+                                    <div className='mt-2'>
+                                        <div className='' onClick={() => setShow(!show)} >
+                                            <p className='off6 d-flex'>LAYOUTS<span className='off5'><IoIosArrowForward /></span> </p>
+                                        </div>
+                                        <div className=''>
+                                            {
+                                                show && <>
+
+
+                                                    <div className='row'>
+                                                        <div className='col'>
+
+                                                            <div className='' >
+                                                                <p className='text-black text-black lay1  mt-4 '>LAYOUTS</p>
+                                                                <div className='text-secondary lay2 d-flex mt-1'>
+                                                                    <Link className="nav-link" aria-current="page" to="/homev1">
+                                                                        HomeV1
+                                                                    </Link>
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary mt-1'>
+                                                                    <Link className="nav-link" aria-current="page" to="/blog">
+                                                                        Blog
+                                                                    </Link>
+
+                                                                </div>
+                                                                <div className='lay3 text-secondary d-flex mt-1'>
+                                                                    <Link className="nav-link" aria-current="page" to="/Gallery">
+                                                                        Gallery
+                                                                    </Link>
+
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary mt-1'>
+                                                                    <Link className="nav-link" aria-current="page" to="/aboutus">
+                                                                        About Us
+                                                                    </Link>
+                                                                </div>
+
+                                                                <div className='lay3 text-secondary d-flex mt-1'>
+                                                                    <Link className="nav-link" aria-current="page" to="/customer">
+                                                                        Customer
+                                                                    </Link>
+
+                                                                    <div className='lay5 text-white text-center'>ACTIVE</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary d-flex mt-1'>HomeV6
+
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV7</div>
+
+                                                                <div className='lay3 text-secondary d-flex mt-1'>HomeV8
+                                                                    <div className='lay6 text-white text-center'>SLIDER</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV9</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV10</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV11</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV12</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV13</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV14</div>
+                                                                <div className='lay3 text-secondary mt-1'>HomeV15</div>
+                                                                <div className='lay3 text-secondary d-flex mt-1'>HomeV16
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                </div>
+
+                                                                <div className='lay3 text-secondary d-flex mt-1'>HomeV17
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                    <div className='lay6 text-white text-center'>NEW</div>
+                                                                </div>
+                                                                <div className='lay3 text-secondary d-flex mt-1'>HomeV18
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+                                                                    <div className='lay6 text-white text-center'>NEW</div>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div className='col'>
+                                                            <div className='' >
+                                                                <p className='text-black text-black lay1  mt-4 '>SKINS</p>
+                                                                <div className='text-secondary lay2 d-flex'>SKIN1-<span> Boutique</span>
+
+                                                                </div>
+                                                                <div className='text-secondary lay2 d-flex mt-1'>SKIN2-<span> Books</span>
+                                                                </div>
+
+                                                                <div className='text-secondary lay2 d-flex mt-1'>SKIN3-<span>Jewellery</span>
+                                                                </div>
+
+
+                                                                <div className='lay2 d-flex text-secondary mt-1'>SKIN4-<span>Product</span>
+                                                                    <div className='lay4 text-white text-center'>HOT</div>
+
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN5-<span>Tools</span>
+                                                                </div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN6-<span>Gadgets</span>
+                                                                </div>
+                                                                <div className='lay2 text-secondary mt-1'>SKIN7-<span>Furniture</span>
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN8-<span>Cosmetics</span>
+
+                                                                </div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN9-<span>Computers</span></div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN10-<span>Kitchen</span></div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN11-<span>Christmas</span></div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN12-<span>Cannabis</span>
+                                                                    <div className='lay4 text-white text-center '>HOT</div>
+
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN13-<span>Wine</span>
+                                                                    <div className='lay10 text-white text-center '>NEW</div>
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN14- <span>FoodDelivery</span>
+                                                                    <div className='lay10 text-white text-center '>NEW</div>
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN15-<span>Lenses</span>
+                                                                    <div className='lay10 text-white text-center '>NEW</div>
+                                                                </div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN16-<span>Cakes</span>
+                                                                    <div className='lay10 text-white text-center '>NEW</div>
+                                                                </div>
+
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN17-<span>Plants</span>
+
+                                                                    <div className='lay10 text-white text-center '>NEW</div>
+                                                                </div>
+                                                                <div className='lay2 text-secondary d-flex mt-1'>SKIN18-<span>Pasta</span>
+
+                                                                    <div className='lay10 text-white text-center  '> NEW</div>
+                                                                </div>
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </>
+                                            }
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div className='mt-2 '>
+                                        <div className='' onClick={() => setShow1(!show1)}>
+                                            <p className='off6 d-flex'>SHOP<span className='off7'><IoIosArrowForward /></span> </p>
+                                        </div>
+
+                                        <div className=''>
+                                            {
+                                                show1 && <>
+
+                                                    <div className='row'>
+                                                        <div className='col'>
+                                                            <div className=''>
+                                                                <p className='shop1 text-black'>COLLECTION LAYOUTS</p>
+                                                                <div className='text-secondary shop2 '>List Collections V1</div>
+                                                                <div className='text-secondary shop2 mt-1'>List Collections V2</div>
+                                                                <div className='text-secondary shop2 mt-1'>2 Products per Row</div>
+                                                                <div className='text-secondary shop2 mt-1'>3 Products per Row</div>
+                                                                <div className='text-secondary shop2 mt-1'>4 Products per Row</div>
+                                                                <div className='text-secondary shop2 mt-1'>List Products</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>List Products V2
+                                                                    <div className='shop3 text-white text-center mt-1'>HOT</div>
+                                                                    <div className='shop4 text-white text-center mt-1  d-flex'>NEW</div>
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Left Sidebar </div>
+                                                                <div className='text-secondary shop2 mt-1'>Right Sidebar </div>
+                                                                <div className='text-secondary shop2 mt-1'>Left Sidebar </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='col'>
+                                                            <div className=''>
+                                                                <p className='shop1 text-black'>SINGLE PRODUCTS LAYOUTS</p>
+                                                                <div className='text-secondary shop2 '>Product V1- Classic</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Product V2- Thumbs List</div>
+                                                                <div className='text-secondary shop2 mt-1'>Product V3- 3 Columns</div>
+                                                                <div className='text-secondary shop2 mt-1'>Product V4- Sticky Side</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Product V5- Grid
+                                                                    <div className='shop3 text-white text-center mt-1'>HOT</div>
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Product V6- Slider</div>
+                                                                <div className='text-secondary shop2 mt-1'>Product V1- With Column</div>
+                                                                <div className='text-secondary shop2 mt-1'>Product V2- With Column</div>
+                                                                <div className='text-secondary shop2 d-flex mt-1'>3D Model and Video
+                                                                    <div className='shop3 text-white text-center mt-1'>HOT</div>
+                                                                </div>
+                                                                <div className='text-secondary shop2 d-flex mt-1'>Pre Order
+                                                                    <div className='shop3 text-white text-center mt-1'>HOT</div>
+                                                                    <div className='shop4 text-white text-center d-flex mt-1'>NEW</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='col-sm-12'>
+                                                            <div className='text-center mt-5'>
+                                                                <p className='shop1 text-black'>PRODUCT OPTIONS</p>
+                                                                <div className='text-secondary shop2 '>On Listing</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Color,Text</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Image,Text</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Big Image,Text</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Color,Select Dropdown</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Small text,Text</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex justify-content-center'>Custom Image,Text
+                                                                    <div className='shop4 text-white text-center mt-1  d-flex'>NEW</div>
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1 '>Custom Big Image</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Custom Color,Text</div>
+                                                                <div className='text-secondary shop2 mt-1 '>Square Color,Text</div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </>
+                                            }
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+                                    <div className='mt-2'>
+                                        <div className='' onClick={() => setShow2(!show2)}>
+                                            <p className='off6 d-flex'>BLOG<span className='off7'><IoIosArrowForward /></span> </p>
+                                        </div>
+
+                                        <div className=''>
+                                            {
+                                                show2 && <>
+                                                    <div className=''>
+                                                        <p className='foot33 text-secondary text-center'>Blog V1-Classic</p>
+                                                        <p className='foot33 text-secondary text-center'>Blog V2-Grid</p>
+                                                        <p className='foot33 text-secondary text-center'>Blog V3-Masonry</p>
+                                                        <p className='foot33 text-secondary text-center'>Blog V4-Slider</p>
+                                                        <p className='foot33 text-secondary text-center'>Single Post</p>
+                                                    </div>
+                                                </>
+                                            }
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div className='mt-2'>
+                                        <div className='' onClick={() => setShow3(!show3)}>
+                                            <p className='off6 d-flex'>GALLERY<span className='off5'><IoIosArrowForward /></span> </p>
+                                        </div>
+
+                                        <div className=''>
+                                            {
+                                                show3 && <>
+                                                    <div className='text-center'>
+                                                        <p className='foot33 text-secondary text-center'>Gallery V1-Masonry</p>
+                                                        <p className='foot33 text-secondary text-center'>Gallery V1-imagess</p>
+                                                        <p className='foot33 text-secondary text-center'>Gallery V1-cases</p>
+                                                        <p className='foot33 text-secondary text-center'>Gallery V1-Masonry</p>
+                                                        <p className='foot33 text-secondary text-center'>Single Post</p>
+                                                    </div>
+
+                                                </>
+                                            }
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div className='mt-2 '>
+                                        <div className='' onClick={() => setShow4(!show4)} >
+                                            <p className='off6 d-flex'>PAGES<span className='off8'><IoIosArrowForward /></span> </p>
+                                        </div>
+
+                                        <div>
+                                            {
+                                                show4 && <>
+
+                                                    <div className='text-center'>
+                                                        <p className='foot33 text-secondary text-center'>About us</p>
+                                                        <p className='foot33 text-secondary text-center'>Customer Service</p>
+                                                        <p className='foot33 text-secondary text-center'>Sizing Guide</p>
+                                                        <p className='foot33 text-secondary text-center'>FAQ's</p>
+                                                        <p className='foot33 text-secondary text-center'>Contact us</p>
+                                                        <p className='foot33 text-secondary text-center'>Coming Soon</p>
+                                                        <p className='foot33 text-secondary text-center'>Page 404</p>
+                                                        <p className='foot33 text-secondary text-center'>Contact Builder</p>
+                                                    </div>
+
+                                                </>
+                                            }
+                                        </div>
+
+                                    </div>
+
+                                    <div className='mt-2'>
+                                        <div className='' onClick={() => setShow5(!show5)}>
+                                            <p className='off6 d-flex'>WOMEN'S<span className='off9'><IoIosArrowForward /></span> </p>
+                                        </div>
+
+                                        <div className=''>
+                                            {
+                                                show5 && <>
+                                                    <div className='row'>
+                                                        <div className='col'>
+                                                            <div className=''>
+                                                                <p className='shop1 text-black'>CLOTHING</p>
+                                                                <div className='text-secondary shop2 '>Coats</div>
+                                                                <div className='text-secondary shop2 mt-1'>Jackets</div>
+                                                                <div className='text-secondary shop2 mt-1'>Blazers</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Dressess
+
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Playsuits & Jackets</div>
+                                                                <div className='text-secondary shop2 mt-1'>Trousers</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Jeans
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Knitwear</div>
+                                                                <div className='text-secondary shop2 mt-1'>Sweatshirts & Hoddies </div>
+                                                                <div className='text-secondary shop2 mt-1'>T-shirts </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='col'>
+                                                            <div className=''>
+                                                                <p className='shop1 text-black'>SHOES</p>
+                                                                <div className='text-secondary shop2 '>Trainers</div>
+                                                                <div className='text-secondary shop2 mt-1'>Boots and Ankle Boots</div>
+
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Heels
+
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Flats</div>
+                                                                <div className='text-secondary shop2 mt-1'>Platforms</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Heeled Sandals</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className='col'>
+                                                            <div className=''>
+                                                                <p className='shop1 text-black'>ACCESSORIES</p>
+                                                                <div className='text-secondary shop2 '>Bags</div>
+                                                                <div className='text-secondary shop2 mt-1'>BagsPacks</div>
+                                                                <div className='text-secondary shop2 mt-1'>Glasses</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Jewellery
+
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Earings</div>
+                                                                <div className='text-secondary shop2 mt-1'>iPhone Cases</div>
+                                                                <div className='text-secondary shop2 mt-1 d-flex'>Gadgets
+                                                                </div>
+                                                                <div className='text-secondary shop2 mt-1'>Hats & Beanie</div>
+                                                                <div className='text-secondary shop2 mt-1'>Purses</div>
+                                                                <div className='text-secondary shop2 mt-1'>Belts</div>
+                                                                <div className='text-secondary shop2 mt-1'>Socks</div>
+
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                </>
+                                            }
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div className='mt-2'>
+                                        <div className='' onClick={() => setShow6(!show6)} >
+                                            <p className='off6 d-flex'>MEN'S<span className='off8'><IoIosArrowForward /></span> </p>
+                                        </div>
+                                        <div>
+                                            {
+                                                show6 && <>
+
+                                                    <div className='row'>
+                                                        <div className='col'>
+                                                            <p className='shop1 mt-5 text-black'>CLOTHING</p>
+                                                            <div>
+                                                                <img src='https://shella-demo5.myshopify.com/cdn/shop/files/09_170x.progressive.png.jpg?v=1614334854' alt='' className='' />
+                                                            </div>
+                                                            <div className='text-secondary shop2 mt-1'>Coats</div>
+                                                            <div className='text-secondary shop2 mt-1 d-flex'>Jackets
+                                                                <div className='shop3 text-white text-center mt-1'>SALE</div>
+                                                            </div>
+                                                            <div className='text-secondary shop2 mt-1'>Jeans</div>
+                                                            <div className='text-secondary shop2 mt-1'>T-shirts</div>
+                                                            <div className='text-secondary shop2 mt-1'>Sweatshirts</div>
+                                                            <div className='text-secondary shop2 mt-1'>Knitwear</div>
+                                                            <div className='text-secondary shop2 mt-1'>Shirts</div>
+                                                            <div className='text-secondary shop2 mt-1'>Trousers</div>
+                                                            <div className='text-secondary shop2 mt-1'>Shorts</div>
+
+                                                        </div>
+
+
+                                                        <div className='col'>
+                                                            <p className='shop1 mt-5 d-flex text-black'>SHOES
+                                                               
+                                                            </p>
+                                                            <div>
+                                                                <img src='https://shella-demo5.myshopify.com/cdn/shop/files/10_170x.progressive.png.jpg?v=1614334854' alt='' className='' />
+                                                            </div>
+                                                            <div className='text-secondary shop2 mt-1'>Trainers</div>
+                                                            <div className='text-secondary shop2 mt-1'>Boots & Ankle Boots</div>
+                                                            <div className='text-secondary shop2 mt-1'></div>
+                                                            <div className='text-secondary shop2 mt-1'>Shoes</div>
+                                                            <div className='text-secondary shop2 mt-1'>Sandals</div>
+                                                            <div className='text-secondary shop2 mt-1'>Knitwear</div>
+                                                            <div className='text-secondary shop2 mt-1'>Shirts</div>
+                                                            <div className='text-secondary shop2 mt-1'>Trousers</div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </>
+                                            }
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div className='   mt-2 '>
+                                        <div className=''>
+                                            <p className='off6 d-flex'>BUY NOW!<span className='off9'><IoIosArrowForward /></span> </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            </div>
+
+
+                            <div className='new22' onClick={handleclick}>
+                                <p className='text-white d-flex justify-content-center new23'>S</p>
+                            </div>
+
+                            <div className='d-flex new24'>
+                                <CiSearch className='new25' />
+                                <GoQuestion className='new25' />
+                                <GoPerson className='new25' />
+                                <BsHeart className='new25' />
+                                <HiOutlineShoppingBag className='off13' />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div className=' a4'>
+                        {
+                            active == 1 && <>
+
+                                <Layout />
+                            </>
+                        }
+                        {
+                            active == 2 && <>
+                                <Shop />
+                            </>
+                        }
+                        {
+                            active == 6 && <>
+                                <Women />
+                            </>
+                        }
+                        {
+                            active == 7 && <>
+                                <Mens />
+                            </>
+                        }
+
+
+                    </div>
+
+
+                </div>
             </div>
+
+
             <hr className='navi3 hide7'></hr>
 
 
@@ -689,7 +1236,7 @@ function About(props) {
             </div>
 
             <div className='top11'>
-                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tpp'>TOP</a>
+                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tpp'><BsArrowUp className='mt-2 foo12'/></a>
             </div>
 
         </div>

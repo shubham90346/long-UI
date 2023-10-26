@@ -26,7 +26,11 @@ import './About_css/Tablet2.css';
 import './About_css/Mob11.css';
 import './About_css/Mob22.css';
 import './About_css/Mob33.css';
-
+import './New_Home_css/New_Home.css';
+import './New_Home_css/New_Tablet.css';
+import './New_Home_css/New_Large.css';
+import './New_Home_css/New_Medium.css';
+import './New_Home_css/New_Small.css';
 import Home from './Components/Home';
 import Main from './New_Components/Main';
 import Blog_Home from './Blog_Components/Blog_Home';
@@ -34,16 +38,17 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Gallery from './Gallery_Components/Gallery';
 import About from './About_Components/About';
 import Customer from './Customer_Components/Customer';
+import New_Home from './Components/New_Home';
 
 
 function App() {
   return (
     <div className="">
-
-      <BrowserRouter>
+      
+            <BrowserRouter>
         {/* <Navigation /> */}
         <Routes>
-          <Route path='/' element={< Home />}></Route>
+          <Route path='/' element={<New_Home />}></Route>
           <Route path='/homev1' element={<Main />}></Route>
           <Route path='/blog' element={<Blog_Home />}></Route>
           <Route path='/gallery' element={<Gallery />}></Route>
@@ -51,7 +56,6 @@ function App() {
           <Route path='/customer' element={<Customer />}></Route>
         </Routes>
       </BrowserRouter>
-
 
     </div>
   );

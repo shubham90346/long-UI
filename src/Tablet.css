@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Dancing+Script:wght@400;700&family=Oleo+Script&display=swap');
+
     .head1 {
         font-family: Young Serif;
         font-size: 28px;
@@ -23,15 +26,17 @@
         margin-top: -15% !important;
         margin-left: 70% !important;
     }
-    .maj2{
+
+    .maj2 {
         display: block !important;
         position: absolute;
         top: 0;
         margin-top: 16%;
         margin-left: 22%;
     }
-    .maj1{
-        display: block !important; 
+
+    .maj1 {
+        display: block !important;
     }
 
     /* .main3 {
@@ -51,7 +56,7 @@
         font-family: Young Serif;
         margin-top: -18% !important;
     }
-    
+
 
 
     .main7 {
@@ -112,15 +117,176 @@
     .m13 {
         display: none !important;
     }
-    .navii3{
-        font-family:Kanit;
+
+    .navii3 {
+        font-family: Kanit;
         font-weight: 500 !important;
         font-size: 22px !important;
         background-color: black;
         margin-top: -0.5%;
     }
+
+    .off1 {
+        width: 90%;
+        border: none;
+    }
+
+    .off2 {
+        margin-top: 1.6%;
+    }
+
+    .off3 {
+        font-size: 20px;
+    }
+
+    .off4 {
+        font-size: 30px !important;
+        color: white;
+        margin-left: 2% !important;
+    }
+
+    .off5 {
+        margin-left: 70%;
+    }
+
+    .off6 {
+        font-size: 17px;
+        font-weight: 350;
+    }
+
+    .off7 {
+        margin-left: 77%;
+    }
+
+    .off8 {
+        margin-left: 75%;
+    }
+
+    .off9 {
+        margin-left: 67%;
+    }
+
+    .off10 {
+        background-color: black;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        margin-top: 2.5% !important;
+        margin-left: 3% !important;
+
+    }
+
+    .off11 {
+        font-family: Dancing Script;
+        font-size: 34px !important;
+        margin-top: -30% !important;
+       
+    }
+
+    .off12 {
+        margin-left: 53% !important;
+        margin-top: 2% !important;
+    }
+
+    .off13 {
+        margin-left: 10%;
+        font-size: 45px;
+        margin-top: -1%;
+        color: white;
+    }
+
+    .off0 {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        width: 100% ;
+        display: block !important;
+    }
     
-   
+
+    .hom2 {
+        position: absolute;
+        top: 0;
+        margin-top: 30% !important;
+        margin-left: 37% !important;
+    }
+
+    .off14 {
+        background-color: black;
+        margin-top: 63% !important;
+        display: block !important;
+        position: absolute;
+        width: 102% !important;
+    }
+
+    .off15 {
+        font-size: 13px;
+    }
+    .hom10 {
+        margin-left: 5%;
+        font-size: 21px;
+        color: white;
+    }
+    .hommm10 {
+    
+        font-size: 21px;
+        color: white;
+    }
+    .shu1{
+        display: none !important;
+    }
+    .hom3 {
+        margin-bottom: -7%;
+        font-size: 42px !important;
+        font-weight: 300;
+    }
+    
+    .hom4 {
+        margin-bottom: 4%;
+        font-size: 42px !important;
+        font-weight: 300;
+    }
+    
+    .hom5 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .of9 {
+        width: 100% !important  ;
+        height: 520px !important;
+    }
+
+    .main51 {
+        justify-content: center;
+        /* width: 90% ; */
+    }
+
+    .b3{
+        font-size: 23px;
+        margin-left: 10%;
+    }
+    .mkk1{
+        /* position: absolute;
+        top: 0; */
+        background-color: black;
+        /* width: 100%; */
+        /* width: 95%; */
+    }
+
+    .new24 {
+        margin-left: 52% !important;
+        margin-top: 1%;
+    }
+
+    .new25 {
+        margin-left: 10%;
+        font-size: 44px !important;
+        margin-top: -1%;
+        color: white;
+    }
+
+
+
 
 
 

@@ -15,7 +15,7 @@ function Mens(props) {
                 </div>
 
 
-                <div className='col-lg-2 '>
+                <div className='col-lg-2'>
                 <p className='shop1 mt-5 text-black'>CLOTHING</p>
                 <div>
                     <img src='https://shella-demo5.myshopify.com/cdn/shop/files/09_170x.progressive.png.jpg?v=1614334854' alt='' className=''/>
