@@ -29,7 +29,7 @@ import { BsPlus } from 'react-icons/bs'
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from 'react-icons/io'
 import { BsSearch } from 'react-icons/bs'
-import { RiMenuSearchLine } from 'react-icons/ri'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import { BsArrowUp } from 'react-icons/bs';
 
@@ -205,146 +205,13 @@ function About(props) {
 
             {/* NAVIGATION RESPONSIVE */}
 
-            {/* <div className='container-fluid hide2'>
-                <div className='row b4 '>
-                    <div className='col-md-6 col'>
-                        <div className='d-flex'>
-                            <div className=' '>
-                                <nav className="navbar navbar-expand-lg navbar-light">
-                                    <div className="">
-                                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span className="navbar-toggler-icon"></span>
-                                        </button>
-                                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                            <ul className="navbar-nav  mb-lg-0  a6" >
-
-                                                <li className="nav-item a2 ">
-                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>
-                                                        LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
-                                                </li>
-                                                <li className="nav-item a1 ">
-                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
-                                                </li>
-
-
-                                                <li className="nav-item a1 ">
-                                                    <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                                                        <a className="nav-link d-flex" href="#">SHOP <span className='nav9'><IoIosArrowDown /></span></a>
-                                                        <div class="dropdown-content">
-                                                            <a href="#" className='tab4 text-secondary'>Blog V1-Classic</a>
-                                                            <a href="#" className='tab5  text-secondary'>Blog V2-Grid</a>
-                                                            <a href="#" className='tab5 text-secondary'>Blog V3-Masonry</a>
-                                                            <a href="#" className='tab5 text-secondary'>Blog V4-Slider</a>
-                                                            <a href="#" className='tab5 text-secondary'>Single Post</a>
-
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li className="nav-item a1 ">
-                                                    <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                                                        <a className="nav-link d-flex" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
-                                                        <div class="dropdown-content">
-                                                            <a href="#" className='tab4 text-secondary'>Gallery V1-Masonry</a>
-                                                            <a href="#" className='tab5  text-secondary'>Gallery V2-Masonry</a>
-                                                            <a href="#" className='tab5 text-secondary'>Gallery V3-Grid </a>
-                                                            <a href="#" className='tab5 text-secondary'>Gallery V4-Grid</a>
-                                                            <a href="#" className='tab5 text-secondary'>Single </a>
-
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li className="nav-item a1 ">
-                                                    <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: ' rgb(113, 107, 110)' } : { color: '' }}>
-                                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
-                                                        <div class="dropdown-content">
-                                                            <a href="#" className='tab4 text-secondary'>About Us</a>
-                                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
-                                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
-                                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
-                                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
-                                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
-                                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
-                                                            <a href="#" className='tab5 text-secondary'>Icons</a>
-                                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-
-                                                <li className="nav-item a1">
-                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
-                                                </li>
-                                                <li className="nav-item a1">
-                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
-                                                </li>
-                                                <li className="nav-item  a1">
-                                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(8)} style={active === 8 ? { color: '  rgb(113, 107, 110)' } : { color: '' }}>BUYNOW! <span className='nav9'><IoIosArrowDown /></span></a>
-                                                </li>
-
-
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                </nav>
-                                <div className=' a4'>
-                                    {
-                                        active == 1 && <>
-
-                                            <Layout />
-                                        </>
-                                    }
-                                    {
-                                        active == 2 && <>
-                                            <Shop />
-                                        </>
-                                    }
-                                    {
-                                        active == 6 && <>
-                                            <Women />
-                                        </>
-                                    }
-                                    {
-                                        active == 7 && <>
-                                            <Mens />
-                                        </>
-                                    }
-
-
-                                </div>
-
-
-                            </div>
-
-                            <div className='b2'>
-                                <SiSwiper className='b1' />
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='col-md-6 col d-flex justify-content-end '>
-                        <CiSearch className='b3 mt-3' />
-                        <GoQuestion className='b3 mt-3' />
-                        <GoPerson className='b3 mt-3' />
-                        <BsHeart className='b3 mt-3' />
-                        <HiOutlineShoppingBag className='b3 mt-3 ' />
-
-                    </div>
-
-                </div>
-
-            </div> */}
-
-
-
             <div className=' hide2'>
 
-                <div className=' '>
+                <div className='sr1 '>
                     <div className='mkk1'>
                         <div className='d-flex '>
                             <a className="btn new21" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <RiMenuSearchLine />
+                                <AiOutlineMenuUnfold />
                             </a>
 
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -868,8 +735,6 @@ function About(props) {
 
                 </div>
             </div>
-
-
             <hr className='navi3 hide7'></hr>
 
 

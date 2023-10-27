@@ -9,7 +9,7 @@ import { GoQuestion } from 'react-icons/go'
 import { GoPerson } from 'react-icons/go'
 import { BsHeart } from 'react-icons/bs'
 import { BsSearch } from 'react-icons/bs'
-import { RiMenuSearchLine } from 'react-icons/ri'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { LiaBalanceScaleSolid } from 'react-icons/lia'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { BiLogoFacebook } from 'react-icons/bi'
@@ -45,11 +45,9 @@ function New_Home(props) {
 
                 {/* ----NAVBAR--- */}
 
-
-                <div className=' new2 '>
-
-
-                    <div className='container d-flex new14'>
+                <div className='container '>
+                <div className='new2 '>
+                    <div className=' d-flex new14'>
                         <h5 className='text-white new9'> <i className='navic'>Shella</i></h5>
 
                         <nav className="navbar navbar-expand-lg navbar-light new3">
@@ -61,17 +59,17 @@ function New_Home(props) {
                                     <ul className="navbar-nav  mb-lg-0  a6" >
 
 
-                                        <li className="nav-item a2 ">
+                                        <li className="nav-item aa2 ">
                                             <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: 'rgb(113, 107, 110)' } : { color: 'white' }}>
                                                 LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
                                         </li>
 
-                                        <li className="nav-item a1 ">
+                                        <li className="nav-item aa1 ">
                                             <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(2)} style={active === 2 ? { color: 'rgb(113, 107, 110) ' } : { color: 'white ' }}>SHOP <span className='nav9'><IoIosArrowDown /></span></a>
                                         </li>
 
 
-                                        <li className="nav-item a1 ">
+                                        <li className="nav-item aa1 ">
                                             <div className=' dropdown ' onMouseOver={() => IsActive(3)} style={active === 3 ? { color: 'rgb(113, 107, 110)' } : { color: 'white ' }}>
                                                 <a className="nav-link d-flex text-white" href="#">BLOG<span className='nav9'><IoIosArrowDown /></span></a>
                                                 <div class="dropdown-content">
@@ -84,7 +82,7 @@ function New_Home(props) {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li className="nav-item a1 ">
+                                        <li className="nav-item aa1 ">
                                             <div className=' dropdown ' onMouseOver={() => IsActive(4)} style={active === 4 ? { color: 'rgb(113, 107, 110)' } : { color: 'white ' }}>
                                                 <a className="nav-link d-flex text-white" href="#">GALLERY<span className='nav9'><IoIosArrowDown /></span></a>
                                                 <div class="dropdown-content">
@@ -98,7 +96,7 @@ function New_Home(props) {
                                             </div>
                                         </li>
 
-                                        <li className="nav-item a1 ">
+                                        <li className="nav-item aa1 ">
                                             <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'rgb(113, 107, 110) ' } : { color: 'white' }}>
                                                 <a className="nav-link d-flex text-white" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                                 <div class="dropdown-content">
@@ -115,13 +113,13 @@ function New_Home(props) {
                                             </div>
                                         </li>
 
-                                        <li className="nav-item a1">
+                                        <li className="nav-item aa1">
                                             <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(6)} style={active === 6 ? { color: ' rgb(113, 107, 110) ' } : { color: 'white' }}>WOMEN'S <span className='nav9'><IoIosArrowDown /></span></a>
                                         </li>
-                                        <li className="nav-item a1">
+                                        <li className="nav-item aa1">
                                             <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(7)} style={active === 7 ? { color: ' rgb(113, 107, 110)' } : { color: 'white ' }}>MEN'S <span className='nav9'><IoIosArrowDown /></span></a>
                                         </li>
-                                        <li className="nav-item  a1">
+                                        <li className="nav-item  aa1">
                                             <a className="nav-link d-flex" href="#"
                                                 onMouseOver={() => IsActive(8)} style={active === 8 ? { color: 'rgb(113, 107, 110) ' } : { color: 'white' }}
                                                 onMouseLeave={() => IsActive(0)}
@@ -151,7 +149,12 @@ function New_Home(props) {
 
 
 
-                    <div className='  new4'>
+                    
+
+                </div>
+
+                </div>
+                <div className=' container-fluid  new4'>
                         {
                             active == 1 && <>
                                 <div onMouseLeave={() => IsActive(0)}>
@@ -188,8 +191,7 @@ function New_Home(props) {
 
 
                     </div>
-
-                </div>
+           
 
 
                 {/* ----RESPONSIVE NAVBAR---- */}
@@ -198,7 +200,7 @@ function New_Home(props) {
                 <div className='new20'>
                     <div className='d-flex '>
                         <a className="btn new21" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                            <RiMenuSearchLine />
+                            <AiOutlineMenuUnfold />
                         </a>
 
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -734,7 +736,7 @@ function New_Home(props) {
                     <div className='col-md-12'>
                         <div className='container'>
 
-                            <p className=' text-center mt-3  text-secondary '>© 2023 Shella Fashion Store Shopify. All Rights Reserved. Ecommerce Software by Shopify. Ecommerce Software by Shopify. Ecommerce Software by Shopify. Shopify Theme by MPIthemes.  </p>
+                            <p className=' mt-3 hoom7 text-secondary '>© 2023 Shella Fashion Store Shopify. All Rights Reserved. Ecommerce Software by Shopify. Ecommerce Software by Shopify. Ecommerce Software by Shopify. Shopify Theme by MPIthemes.  </p>
                         </div>
 
                     </div>

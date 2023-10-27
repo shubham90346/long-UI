@@ -32,7 +32,7 @@ import Mens from '../Components/Mens';
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from 'react-icons/io'
 import { BsSearch } from 'react-icons/bs'
-import { RiMenuSearchLine } from 'react-icons/ri'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import { BsArrowUp } from 'react-icons/bs';
 
@@ -196,13 +196,13 @@ function Main(props) {
 
             {/* NAVIGATION RESPONSIVE */}
 
-            <div className=' hide2'>
+            <div className=' hide2 sr1'>
 
                 <div className=' '>
                     <div className='mkk1'>
                         <div className='d-flex '>
                             <a className="btn new21" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <RiMenuSearchLine />
+                                <AiOutlineMenuUnfold />
                             </a>
 
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">

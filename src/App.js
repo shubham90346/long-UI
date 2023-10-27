@@ -26,6 +26,7 @@ import './About_css/Tablet2.css';
 import './About_css/Mob11.css';
 import './About_css/Mob22.css';
 import './About_css/Mob33.css';
+import './Mens_css/Mens.css';
 import './New_Home_css/New_Home.css';
 import './New_Home_css/New_Tablet.css';
 import './New_Home_css/New_Large.css';
@@ -39,14 +40,14 @@ import Gallery from './Gallery_Components/Gallery';
 import About from './About_Components/About';
 import Customer from './Customer_Components/Customer';
 import New_Home from './Components/New_Home';
+import N_Mens from './New_Mens Components/N_Mens';
 
 
 function App() {
   return (
     <div className="">
-      
-            <BrowserRouter>
-        {/* <Navigation /> */}
+
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<New_Home />}></Route>
           <Route path='/homev1' element={<Main />}></Route>
@@ -54,6 +55,7 @@ function App() {
           <Route path='/gallery' element={<Gallery />}></Route>
           <Route path='/aboutus' element={<About />}></Route>
           <Route path='/customer' element={<Customer />}></Route>
+          <Route path='/mens' element={<N_Mens />}></Route>
         </Routes>
       </BrowserRouter>
 

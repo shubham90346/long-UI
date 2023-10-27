@@ -95,9 +95,13 @@
     .r1{
         background-color: black;
         bottom: 0;
-        margin-bottom: -40%;
+        margin-bottom: -32%;
         width: 102.8%;
         display: block;
         position: absolute;
+    }
+    .hoom7 {
+        font-size: 13px !important;
+   
     }
 }

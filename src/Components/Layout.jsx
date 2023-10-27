@@ -19,12 +19,13 @@ function Layout(props) {
                             </Link>
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
+
                         <div className='lay3 text-secondary mt-1'>
                             <Link className="nav-link" aria-current="page" to="/blog">
                                 Blog
                             </Link>
-
                         </div>
+
                         <div className='lay3 text-secondary d-flex mt-1'>
                             <Link className="nav-link" aria-current="page" to="/Gallery">
                                 Gallery
@@ -32,6 +33,7 @@ function Layout(props) {
 
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
+
                         <div className='lay3 text-secondary mt-1'>
                             <Link className="nav-link" aria-current="page" to="/aboutus">
                                 About Us
@@ -42,13 +44,16 @@ function Layout(props) {
                             <Link className="nav-link" aria-current="page" to="/customer">
                                 Customer
                             </Link>
-
                             <div className='lay5 text-white text-center'>ACTIVE</div>
                         </div>
-                        <div className='lay3 text-secondary d-flex mt-1'>HomeV6
 
+                        <div className='lay3 text-secondary d-flex mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/mens">
+                                Men's
+                            </Link>
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
+
                         <div className='lay3 text-secondary mt-1'>HomeV7</div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>HomeV8
@@ -113,7 +118,7 @@ function Layout(props) {
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN11-<span>Christmas</span></div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN12-<span>Cannabis</span>
-                          
+
                         </div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN13-<span>Wine</span>
@@ -121,7 +126,7 @@ function Layout(props) {
                         </div>
 
                         <div className='lay2 text-secondary  mt-1'>SKIN14- <span>FoodDelivery</span>
-                         
+
                         </div>
 
                         <div className='lay2 text-secondary d-flex mt-1'>SKIN15-<span>Lenses</span>

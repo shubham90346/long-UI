@@ -31,77 +31,89 @@
         font-size: 14px;
     }
 
-    .foot18{
-        font-family: Jost; 
+    .foot18 {
+        font-family: Jost;
         color: white;
         background-color: black;
         font-size: 15px;
         height: 24px;
     }
 
-    .foot18:hover{
+    .foot18:hover {
         background-color: white;
-        color: black ;
-        border: 1px solid  black;
+        color: black;
+        border: 1px solid black;
     }
-    .foot7{
+
+    .foot7 {
         width: 100%;
     }
-    
+
     .b10 {
         margin-left: 2%;
         margin-top: 3%;
     }
-    .ft8{
+
+    .ft8 {
         margin-left: -4%;
     }
-    .mob3 {   
+
+    .mob3 {
         font-family: Jost;
         font-size: 16px;
         text-decoration: none;
         margin-left: 36%;
 
     }
+
     .mob4 {
         margin-left: 45%;
         color: black;
     }
-    .mob6{
+
+    .mob6 {
         margin-left: 44%;
         color: black;
     }
+
     .ic1 {
         margin-left: 33%;
-        color:black;
+        color: black;
     }
 
     .ic2 {
         margin-left: 60%;
         color: black;
+
     }
+
 
     .ic3 {
         margin-left: 66%;
         color: black;
+
     }
-    .foot5{
+
+    .foot5 {
         font-family: Jost;
-        font-size: 20px; 
+        font-size: 20px;
         margin-top: -7%;
     }
-    .hide3{
+
+    .hide3 {
         display: none;
     }
-    .hide4{
+
+    .hide4 {
         display: none;
     }
-   
+
     .b11 {
         font-size: 55px;
         margin-left: 8%;
     }
 
-    
+
 
 
 

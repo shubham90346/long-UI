@@ -34,7 +34,7 @@ import { CiFilter } from 'react-icons/ci';
 import { useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from 'react-icons/io'
 import { BsSearch } from 'react-icons/bs'
-import { RiMenuSearchLine } from 'react-icons/ri'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 
 function Blog_Home(props) {
@@ -66,7 +66,7 @@ function Blog_Home(props) {
 
             <div className='container hide1'>
                 <div className='row'  >
-                    <div className='col-lg-6' onClick={handleclickk}>
+                    <div className='col-lg-6' onClick={handleclickk}  id='heades'>
                         <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
                     </div>
 
@@ -350,7 +350,7 @@ function Blog_Home(props) {
                     <div className='mkk1'>
                         <div className='d-flex '>
                             <a className="btn new21" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <RiMenuSearchLine />
+                                <AiOutlineMenuUnfold />
                             </a>
 
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -890,7 +890,7 @@ function Blog_Home(props) {
             {/* ----HOME----- */}
 
 
-            <div className='container' id='heades'>
+            <div className='container'>
                 <div className='d-flex'>
                     <p className='home1 text-secondary'>Home<span className='home3'>/</span></p>
                     <p className='home2 text-secondary'>News</p>
