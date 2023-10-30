@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './my.css';
 import './new.css';
@@ -27,6 +26,10 @@ import './About_css/Mob11.css';
 import './About_css/Mob22.css';
 import './About_css/Mob33.css';
 import './Mens_css/Mens.css';
+import './Mens_css/Men_Tablet.css';
+import './Mens_css/Men_Mob2.css';
+import './Mens_css/Men_Mob1.css';
+import './Mens_css/Men_Mob3.css';
 import './New_Home_css/New_Home.css';
 import './New_Home_css/New_Tablet.css';
 import './New_Home_css/New_Large.css';

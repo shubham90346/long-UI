@@ -33,10 +33,15 @@ import { RiMastercardFill } from 'react-icons/ri';
 import { FaCcPaypal } from 'react-icons/fa';
 import { LiaCcDiscover } from 'react-icons/lia';
 import { FaCcAmazonPay } from 'react-icons/fa';
+import { BsPlus } from 'react-icons/bs'
 
 
 function N_Mens(props) {
     const [active, IsActive] = useState(0);
+    const [showText, setShowText] = useState(false);
+    const [showTextt, setShowTextt] = useState(false);
+    const [showText1, setShowText1] = useState(false);
+    const [showText11, setShowText11] = useState(false);
     const [show, setShow] = useState(false);
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
@@ -900,7 +905,134 @@ function N_Mens(props) {
 
 
 
+            {/*  RESPONSIVE FOOTER */}
 
+
+            <div className='row f11'>
+                <div className='col-sm-12 '>
+                    <div className=''>
+                        <p className='foot5  text-center mt-4'>NEWSLETTER SUBSCRIPTION</p>
+                        <p className='foot6 text-secondary text-center'>Sign up for Shella updates to receive information about new arrivals, future events and specials.</p>
+                    </div>
+
+                </div>
+
+                <div className='col-sm-12'>
+                    <div className='d-flex mt-2'>
+                        <input type="text" placeholder='Enter Your Email Address' className='foot7' />
+                    </div>
+
+                    <div className='col-sm-12'>
+                        <div className='foot18 mt-3  text-center'>SUBSCRIBE!</div>
+                    </div>
+
+                    <div className='col-sm-12'>
+                        <div className='d-flex mt-3'>
+                            <div className="form-check b10">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                <p className='ft8 text-center'>I agree with the Privacy. Tristique senectus et netus et malesuada. Nunc scelerisque viverra mauris in.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='row footer3 mt-4'>
+                <div className='col-sm-12'>
+                    <hr className=''></hr>
+                    <div className='' onClick={() => setShowText(!showText)}
+                    //  {active === 1 ? setShowText(!showText)  : ""}
+
+                    >
+                        <p className='foot16 '>SHOP<span className='ic3'><BsPlus /></span> </p>
+                    </div>
+                    <div className=''>
+                        {
+                            showText && <>
+                                <p className='foot33 text-secondary text-center'>New</p>
+                                <p className='foot33 text-secondary text-center'>Clothing</p>
+                                <p className='foot33 text-secondary text-center'>Shoes</p>
+                                <p className='foot33 text-secondary text-center'>Accessories</p>
+                            </>
+                        }
+                    </div>
+
+
+                </div>
+                <hr></hr>
+
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowTextt(!showTextt)}>
+                        <p className='foot15 '>INFORMATION <span className='mob6'><BsPlus /></span></p>
+                    </div>
+                    <div className=''>
+                        {
+                            showTextt && <>
+                                <p className='foot33 text-secondary text-center'>About us</p>
+                                <p className='foot33 text-secondary text-center'>Sizing Guide</p>
+                                <p className='foot33 text-secondary text-center'>FAQ's</p>
+                                <p className='foot33 text-secondary text-center'>Contact us</p>
+                            </>
+                        }
+                    </div>
+                </div>
+
+                <hr></hr>
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowText1(!showText1)}>
+                        <p className='foot16 '>ORDER <span className='ic2'><BsPlus /></span></p>
+                    </div>
+                    <div>
+                        {
+                            showText1 && <>
+                                <p className='foot33 text-secondary text-center'>My Account</p>
+                                <p className='foot33 text-secondary text-center'>View Blog</p>
+                                <p className='foot33 text-secondary text-center'>Wishlist</p>
+                                <p className='foot33 text-secondary text-center'>Compare</p>
+
+                            </>
+                        }
+                    </div>
+                </div>
+                <hr></hr>
+
+                <div className='col-sm-12'>
+                    <div className='' onClick={() => setShowText11(!showText11)}>
+                        <p className='mob3 '>HERE TO HELP <span className='mob4'><BsPlus /></span></p>
+                    </div>
+                    <div>
+                        {
+                            showText11 && <>
+                                <p className='foot33 text-secondary text-center'>Have a question? You may find an answer in our FAQs.But you can also contact us:</p>
+                                <p className='foot33  text-center'>Customer Service</p>
+                                <div className='d-flex justify-content-center'>
+                                    <IoCallOutline className='ft13' />
+                                    <p className='text-secondary ft14'>Call Us: 800-123-4567</p>
+                                </div>
+
+                                <div className='d-flex justify-content-center'>
+                                    <TfiAlarmClock className='ft13' />
+                                    <p className='text-secondary ft14'>
+                                        Mon-Fri: 9:00 am - 6:00 pm<br />
+                                        Sat: 9:00 am - 4:00 pm<br />
+                                        Sun: 9:00 am - 2:00 pm</p>
+                                </div>
+
+                                <div className='d-flex justify-content-center'>
+                                    <VscMail className='ft13' />
+                                    <p className='text-secondary ft14'>Send us an email</p>
+                                </div>
+
+                            </>
+                        }
+                        <hr className=''></hr>
+                    </div>
+                </div>
+            </div>
+
+            <br /> <br />
+            <hr className='hide4'></hr>
 
 
 
