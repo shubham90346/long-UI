@@ -391,3 +391,132 @@
     color: rgb(30, 73, 120);
     border: 1px solid rgb(30, 73, 120);
 }
+
+.mod {
+    font-size: 15px;
+}
+
+.mod1 {
+    margin-left: 26%;
+}
+
+.mod2 {
+    font-size: 22px;
+    margin-left: 4%;
+}
+
+.mod3 {
+    height: 200px;
+}
+
+.mod4 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.canva1 {
+    font-size: 15px;
+    font-weight: 350;
+}
+
+.canva2 {
+    width: 90px;
+}
+
+.canva3 {
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.canva4 {
+    width: 35px;
+    height: 30px;
+    border: 1px solid rgb(245, 245, 245);
+    margin-left: 5%;
+
+}
+
+.canva4:hover {
+    border-color: black;
+}
+
+.canva5 {
+    width: 35px;
+    height: 30px;
+    border: 1px solid rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
+    margin-left: 5%;
+
+}
+
+.canva5:hover {
+    background-color: white;
+}
+
+.canva6 {
+    color: black;
+    font-size: 12px;
+    font-weight: 350;
+    margin-top: 28%;
+    margin-left: 4%;
+}
+
+.canva7 {
+    font-size: 12px;
+}
+
+.can1 {
+    font-size: 20px;
+    color: rgb(246, 93, 82);
+}
+.can2{
+    font-size: 13px;
+    color: rgb(246, 93, 82);
+    margin-left: 3%;
+
+}
+.can3{
+    margin-left: 2%;
+}
+.can4{
+    font-size: 18px;
+    color: rgb(246, 93, 82);
+    
+    
+}
+.can5{
+    margin-left: 52%;
+}
+.can6{
+    font-size: 22px;
+    font-weight: 330;
+    margin-top: -4%;
+}
+.can7{
+    font-size: 12px;
+    margin-top: -4%;
+}
+.can8{
+    width: 100%;
+    background-color: black;
+    height: 30px;
+}
+.can9{
+    font-size: 14px;
+    padding: 3px;
+}
+.can10{
+    font-size: 13px;
+    font-weight: 350;
+    text-decoration: underline;
+    color: black;
+}
+
+.tool1{
+    width: 240px;
+    height: 80px;
+    border: 1px solid black;
+    
+}

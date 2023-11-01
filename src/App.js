@@ -44,6 +44,7 @@ import About from './About_Components/About';
 import Customer from './Customer_Components/Customer';
 import New_Home from './Components/New_Home';
 import N_Mens from './New_Mens Components/N_Mens';
+import Brand_v2 from './Brand_v2/Brand_v2';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
           <Route path='/aboutus' element={<About />}></Route>
           <Route path='/customer' element={<Customer />}></Route>
           <Route path='/mens' element={<N_Mens />}></Route>
+          <Route path='/brandv2' element={<Brand_v2/>}></Route>
         </Routes>
       </BrowserRouter>
 

@@ -17,6 +17,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { LiaEyeSolid } from 'react-icons/lia';
 import { CiFilter } from 'react-icons/ci';
 
+
 function N_Home(props) {
     const [isHovered, setIsHovered] = useState(false);
     const [isHovered1, setIsHovered1] = useState(false);
@@ -92,10 +93,7 @@ function N_Home(props) {
         <div >
 
             <p className='text-secondary cloth'>Home / Men clothing</p>
-
             <div className='row'>
-
-
                 <div className='col-lg-3'>
                     <div className='stickk sk'>
                         <div class=" mt-3">

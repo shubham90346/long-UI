@@ -54,7 +54,13 @@ function Layout(props) {
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
 
-                        <div className='lay3 text-secondary mt-1'>HomeV7</div>
+                        <div className='lay3 text-secondary mt-1'>
+                            <Link className="nav-link" aria-current="page" to="/brandv2">
+                                Brandv2
+                            </Link>
+
+
+                        </div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>HomeV8
                             <div className='lay6 text-white text-center'>SLIDER</div>

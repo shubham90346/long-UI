@@ -35,6 +35,7 @@ import { BsSearch } from 'react-icons/bs'
 import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import { BsArrowUp } from 'react-icons/bs';
+import { AiFillTag } from 'react-icons/ai';
 
 
 function Customer(props) {
@@ -81,10 +82,72 @@ function Customer(props) {
                         <BsHeart className='navi2 mt-3' />
                         <LiaBalanceScaleSolid className="navi2 mt-3" />
                         <HiOutlineShoppingBag className='navi2 mt-3 ' />
-                        <p className='navi2 hea1'>Bag(0)</p>
+                        <p className='navi2 hea1' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Bag(0)</p>
                     </div>
                 </div>
             </div>
+
+            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div className="offcanvas-header">
+
+                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body">
+                    <p className='canva1'>MY BAG ( 1 )</p>
+                    <div className='row'>
+                        <div className='col-6'>
+                            <div className='d-flex'>
+                                <img src='https://shella-demo.myshopify.com/cdn/shop/products/1720433712_1_1_1_140x.progressive.jpg?v=1525093539' alt='' className='canva2' />
+                                <p className='canva6'>Knit cardigan</p>
+                            </div>
+
+                        </div>
+                        <div className='col-6'>
+                            <p className='d-flex justify-content-end canva3'>$148.50</p>
+
+                            <div className='d-flex justify-content-end'>
+
+                                <div className='canva4'>
+                                    <p className='text-center'> - </p>
+                                </div>
+
+                                <div className='canva5'>
+                                    <p className='text-center'>1</p>
+                                </div>
+
+                                <div className='canva4'>
+                                    <p className='text-center'>+</p>
+                                </div>
+                            </div>
+                            <p className='text-secondary text-end mt-3 canva7'>REMOVE</p>
+                        </div>
+                    </div>
+                    <hr className=''></hr>
+                    <div className='d-flex'>
+                        <div className='d-flex'>
+                            <AiFillTag className='can1' />
+                            <p className='can2 d-flex'>AUTO <span className='can3'>DISCOUNT</span></p>
+                        </div>
+                        <div className='can5'>
+                            <p className='can4'>-$16.50</p>
+                        </div>
+                    </div>
+
+                    <p className='can6'>SUBTOTAL: $148.50</p>
+                    <div className='text-secondary can7'>Taxes and shipping fee will be calculated at checkout.</div>
+                    <div className='d-flex mt-3'>
+                        <div className="form-check b10">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <p className='ft8 '>I agree with the Terms and Conditions. Tristique senectus et netus et malesuada. Nunc scelerisque viverra mauris in.</p>
+                        </div>
+                    </div>
+                    <div className='can8'>
+                        <p className='text-white text-center can9'>PROCEED TO CHECKOUT</p>
+                    </div>
+                    <p className='can10 text-end mt-3'>VIEW CART</p>
+                </div>
+            </div>
+
             <hr className='navi3 hide1'></hr>
 
 
@@ -170,6 +233,11 @@ function Customer(props) {
 
                             </ul>
 
+                            <div className="d-flex blog_modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <p className='blog_modal1 text-secondary '>SEARCH</p>
+                                <CiSearch className='blog_modal2' />
+                            </div>
+
                         </div>
                     </div>
                 </nav>
@@ -214,6 +282,27 @@ function Customer(props) {
               
             </div>
             <hr className='navi3 hide1'></hr>
+
+
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div className="modal-dialog modal-fullscreen mod3">
+                    <div className="modal-content container-fluid">
+                        <div className="modal-header">
+
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div className="modal-body">
+                            <p className='text-secondary'>WHAT ARE YOU LOOKING FOR?</p>
+                            <input type='text' className='mod4' placeholder='Search Products...' />
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+
 
             {/* NAVIGATION RESPONSIVE */}
 

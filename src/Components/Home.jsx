@@ -27,14 +27,6 @@ function Home(props) {
 
     return (
         <div>
-            {/* <div className='hom1'>
-            <video width="100%" height="" preload='none' muted playsInline autoPlay loop className='hom1'>
-
-                <source src="https://cdn.shopify.com/s/files/1/0264/8817/6717/files/pexels-cottonbro-9512045.mp4?v=1637151689" type='video/mp4' />
-                Your browser does not support the video tag.
-            </video>
-        </div> */}
-
 
             <div className=''>
                 <div className=''>
@@ -270,7 +262,9 @@ function Home(props) {
 
 
                             <div className='d-flex nav6'>
-                                <CiSearch className='nav7' onMouseOver={() => IsActive(9)} style={active === 9 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
+
+                                <CiSearch className='nav7'  />
+
                                 <GoQuestion className='nav7' onMouseOver={() => IsActive(10)} style={active === 10 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
                                 <GoPerson className='nav7' onMouseOver={() => IsActive(11)} style={active === 11 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
                                 <BsHeart className='nav7' onMouseOver={() => IsActive(12)} style={active === 12 ? { color: ' rgb(113, 107, 110)' } : { color: '' }} />
@@ -282,6 +276,9 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+
+
+
 
             </div>
 
