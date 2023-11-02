@@ -224,16 +224,72 @@ function Blog_Home(props) {
                                     <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
                                         <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
-                                            <a href="#" className='tab4 text-secondary'>About Us</a>
-                                            <a href="#" className='tab5  text-secondary'>Customer Service</a>
-                                            <a href="#" className='tab5 text-secondary'>Sizing Guide</a>
-                                            <a href="#" className='tab5 text-secondary'>FAQ's</a>
-                                            <a href="#" className='tab5 text-secondary'>Contact us</a>
-                                            <a href="#" className='tab5 text-secondary'>Coming Soon</a>
-                                            <a href="#" className='tab5 text-secondary'>Page 404</a>
-                                            <a href="#" className='tab5 text-secondary'>Icons</a>
-                                            <a href="#" className='tab5 text-secondary'>Documentations</a>
+                                        
+                                        <div className=' text-secondary  '>
+                                            <Link className="text-secondary" aria-current="page" to="/homev1">
+                                                Homev1
+                                            </Link>
                                         </div>
+
+
+                                        <div className=' text-secondary page11 '>
+                                            <Link className="text-secondary" aria-current="page" to="/blog">
+                                                Blog
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/Gallery">
+                                            Gallery 
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/aboutus">
+                                            About Us
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/customer">
+                                            Customer Service
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/mens">
+                                            Men's Clothing
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/brand">
+                                            Brand
+                                            </Link>
+                                        </div>
+
+                                        
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/brandv2">
+                                            Brandv2
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/coming">
+                                            Coming Soon
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/error">
+                                            Error 404
+                                            </Link>
+                                        </div>
+
+
+
+                                    </div>
                                     </div>
                                 </li>
 

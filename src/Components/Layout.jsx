@@ -14,59 +14,50 @@ function Layout(props) {
                     <div className='' >
                         <p className='text-black text-black lay1  mt-4 '>LAYOUTS</p>
                         <div className='text-secondary lay2 d-flex mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/homev1">
-                                HomeV1
-                            </Link>
+                            HomeV1
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
 
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/blog">
-                                Blog
-                            </Link>
+                            HomeV2
                         </div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/Gallery">
-                                Gallery
-                            </Link>
-
+                            HomeV3
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
 
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/aboutus">
-                                About Us
-                            </Link>
+                            HomeV4
                         </div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/customer">
-                                Customer
-                            </Link>
+                            HomeV5
                             <div className='lay5 text-white text-center'>ACTIVE</div>
                         </div>
 
                         <div className='lay3 text-secondary d-flex mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/mens">
-                                Men's
-                            </Link>
+                            HomeV6
                             <div className='lay4 text-white text-center'>HOT</div>
                         </div>
 
                         <div className='lay3 text-secondary mt-1'>
-                            <Link className="nav-link" aria-current="page" to="/brandv2">
-                                Brandv2
-                            </Link>
-
-
+                            HomeV7
                         </div>
 
-                        <div className='lay3 text-secondary d-flex mt-1'>HomeV8
+                        <div className='lay3 text-secondary d-flex mt-1'>
+                            HomeV8
                             <div className='lay6 text-white text-center'>SLIDER</div>
                         </div>
-                        <div className='lay3 text-secondary mt-1'>HomeV9</div>
-                        <div className='lay3 text-secondary mt-1'>HomeV10</div>
+
+                        <div className='lay3 text-secondary mt-1'>
+                            HomeV9
+                        </div>
+
+                        <div className='lay3 text-secondary mt-1'>
+                            HomeV10
+                        </div>
+
                         <div className='lay3 text-secondary mt-1'>HomeV11</div>
                         <div className='lay3 text-secondary mt-1'>HomeV12</div>
                         <div className='lay3 text-secondary mt-1'>HomeV13</div>

@@ -5,8 +5,13 @@ import { BsHeart } from 'react-icons/bs';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { LiaBalanceScaleSolid } from 'react-icons/lia';
 import { CiSearch } from 'react-icons/ci';
-import { IoCallOutline } from 'react-icons/io5';
-import { TfiAlarmClock } from 'react-icons/tfi';
+import { AiFillTag } from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
+import { IoIosArrowDown } from 'react-icons/io';
+import Women from '../Components/Women';
+import Mens from '../Components/Mens';
+import Layout from '../Components/Layout';
+import Shop from '../Components/Shop';
 import { VscMail } from 'react-icons/vsc';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -15,26 +20,16 @@ import { BiLogoYoutube } from 'react-icons/bi';
 import { SiSwiper } from 'react-icons/si';
 import { AiOutlineBehance } from 'react-icons/ai';
 import { LiaPinterest } from 'react-icons/lia';
-import { BiLogoVisa } from 'react-icons/bi';
-import { RiMastercardFill } from 'react-icons/ri';
-import { FaCcPaypal } from 'react-icons/fa';
-import { LiaCcDiscover } from 'react-icons/lia';
-import { FaCcAmazonPay } from 'react-icons/fa';
-import { IoIosArrowDown } from 'react-icons/io';
-import Women from '../Components/Women';
-import Mens from '../Components/Mens';
-import Layout from '../Components/Layout';
-import Shop from '../Components/Shop';
-import { BsPlus } from 'react-icons/bs'
-import { useNavigate } from "react-router-dom";
+import { IoCallOutline } from 'react-icons/io5';
+import { TfiAlarmClock } from 'react-icons/tfi';
 import { IoIosArrowForward } from 'react-icons/io'
-import { BsSearch } from 'react-icons/bs'
-import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import { BsArrowUp } from 'react-icons/bs';
-import { AiFillTag } from 'react-icons/ai';
+import { BsSearch } from 'react-icons/bs'
+import { AiOutlineMenuUnfold } from 'react-icons/ai'
+import { BsPlus } from 'react-icons/bs'
 
-function About(props) {
+function New_Brand(props) {
     const [active, IsActive] = useState(0);
     const [showText, setShowText] = useState(false);
     const [showTextt, setShowTextt] = useState(false);
@@ -47,20 +42,23 @@ function About(props) {
     const [show4, setShow4] = useState(false);
     const [show5, setShow5] = useState(false);
     const [show6, setShow6] = useState(false);
-
     const navigate = useNavigate();
-
     const handleclick = () => {
         navigate('/')
-
     }
+
+
+
+
+
     return (
         <div>
-            {/* ---HEADER----*/}
+            {/* ---HEADER---- */}
 
             <div className='' >
-                <p className='gallery text-center text-white ' id='tpp'>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
+                <p className='gallery text-center text-white ' id='brandtop'>FINAL CLEARANCE: Take 20% off 'Sale Must-Haves' </p>
             </div>
+
             <div className='container hide1 '>
                 <div className='row gallery1' id='heades'>
                     <div className='col-lg-6' onClick={handleclick}>
@@ -144,6 +142,8 @@ function About(props) {
 
 
             {/* ----NAVIGATION BAR---- */}
+
+
             <div className='container hide1'>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="">
@@ -194,71 +194,71 @@ function About(props) {
                                         <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
                                         
-                                            <div className=' text-secondary  '>
-                                                <Link className="text-secondary" aria-current="page" to="/homev1">
-                                                    Homev1
-                                                </Link>
-                                            </div>
-
-
-                                            <div className=' text-secondary page11 '>
-                                                <Link className="text-secondary" aria-current="page" to="/blog">
-                                                    Blog
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/Gallery">
-                                                Gallery 
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/aboutus">
-                                                About Us
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/customer">
-                                                Customer Service
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/mens">
-                                                Men's Clothing
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/brand">
-                                                Brand
-                                                </Link>
-                                            </div>
-
-                                            
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/brandv2">
-                                                Brandv2
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/coming">
-                                                Coming Soon
-                                                </Link>
-                                            </div>
-
-                                            <div className=' text-secondary page11'>
-                                                <Link className="text-secondary" aria-current="page" to="/error">
-                                                Error 404
-                                                </Link>
-                                            </div>
-
-
-
+                                        <div className=' text-secondary  '>
+                                            <Link className="text-secondary" aria-current="page" to="/homev1">
+                                                Homev1
+                                            </Link>
                                         </div>
+
+
+                                        <div className=' text-secondary page11 '>
+                                            <Link className="text-secondary" aria-current="page" to="/blog">
+                                                Blog
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/Gallery">
+                                            Gallery 
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/aboutus">
+                                            About Us
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/customer">
+                                            Customer Service
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/mens">
+                                            Men's Clothing
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/brand">
+                                            Brand
+                                            </Link>
+                                        </div>
+
+                                        
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/brandv2">
+                                            Brandv2
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/coming">
+                                            Coming Soon
+                                            </Link>
+                                        </div>
+
+                                        <div className=' text-secondary page11'>
+                                            <Link className="text-secondary" aria-current="page" to="/error">
+                                            Error 404
+                                            </Link>
+                                        </div>
+
+
+
+                                    </div>
                                     </div>
                                 </li>
 
@@ -886,29 +886,273 @@ function About(props) {
 
 
 
-            {/* ----HOME---- */}
+            {/* ---HOME---  */}
 
             <div className='container'>
                 <div className='d-flex ab1'>
                     <p className='home1 text-secondary'>Home<span className='home3'>/</span></p>
-                    <p className='home2 text-secondary'>News Our Store</p>
+                    <p className='home2 text-secondary'>Brands Page Type #1</p>
                 </div>
 
-                <p className='about1 text-center'>About Our Store</p>
-                <div className=''>
-                    <img src='	https://cdn.shopify.com/s/files/1/0026/2956/6516/files/about-page_1024x1024.jpg?v=1534148466' className='about2' />
-
-                    <p className='text-secondary about3 text-center mt-5'>A great About Us page helps builds trust between you and your customers. The more content you provide about you and your <br /> business, the more confident people will be when purchasing from your store.</p>
-                    <img src='https://cdn.shopify.com/s/files/1/0026/2956/6516/files/blogs-about_large.png?v=1533265367' className='about4 mt-4' />
+                <div>
+                    <p className='brand1 text-center'>Brands Page Type #1</p>
                 </div>
-                <br /> <br />
             </div>
-            <hr className='navi3'></hr>
+
+
+
+            <div id="carouselExampleControls" className="carousel slide mt-5" data-bs-ride="carousel">
+                <div className='container'>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <div className='row'>
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand1_81ea27f2-5624-415f-aab1-3c2df96291d2_390x.png?v=1613702434" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.3_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.4_400x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand2_6d31d9ee-ee7a-4ea9-8024-f7f0133b9d59_400x.png?v=1613702434" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div className="carousel-item">
+                            <div className='row'>
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand1_81ea27f2-5624-415f-aab1-3c2df96291d2_390x.png?v=1613702434" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.3_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.4_400x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand2_6d31d9ee-ee7a-4ea9-8024-f7f0133b9d59_400x.png?v=1613702434" className='crousal_image' />
+                                </div>
+
+                                <div className='col-2'>
+                                    <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon crousal_butt" aria-hidden="true"></span>
+
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </button>
+            </div>
+
+
+
+            <div className='container'>
+                <div className='d-flex brn5 '>
+                    <div className=' brand2 text-white text-center'>ALL</div>
+                    <div className=' brand4 text-center'>A</div>
+                    <div className=' brand4 text-center'>B</div>
+                    <div className=' brand3 text-center'>C</div>
+                    <div className=' brand3 text-center'>D</div>
+                    <div className=' brand4 text-center'>E</div>
+                    <div className=' brand3 text-center'>F</div>
+                    <div className=' brand4 text-center'>G</div>
+                    <div className=' brand4 text-center'>H</div>
+                    <div className=' brand4 text-center'>I</div>
+                    <div className=' brand4 text-center'>J</div>
+                    <div className=' brand4 text-center'>K</div>
+                    <div className=' brand3 text-center'>L</div>
+                    <div className=' brand3 text-center'>M</div>
+                    <div className=' brand4 text-center'>N</div>
+                    <div className=' brand4 text-center'>O</div>
+                    <div className=' brand3 text-center'>P</div>
+                    <div className=' brand4 text-center'>Q</div>
+                    <div className=' brand4 text-center'>R</div>
+                    <div className=' brand4 text-center'>S</div>
+                    <div className=' brand4 text-center'>T</div>
+                    <div className=' brand4 text-center'>U</div>
+                    <div className=' brand3 text-center'>V</div>
+                    <div className=' brand4 text-center'>W</div>
+                    <div className=' brand4 text-center'>X</div>
+                    <div className=' brand4 text-center'>Y</div>
+                    <div className=' brand3 text-center'>Z</div>
+                    <div className=' brand2 text-white text-center'>#</div>
+                </div>
+                <hr className='mt-5'></hr>
+
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3 col-md-3'>
+                        <p className='text-center brn'>C</p>
+                    </div>
+
+                    <div className='col-lg-3 col-md-3'>
+                        <p className='brn1'> CALVIN KLEIN</p>
+                    </div>
+
+                    <div className='col-lg-3 col-md-3'>
+                        <p className='brn1'>
+                            CHANEL</p>
+                    </div>
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>D</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>
+                            DIOR</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>
+                            DOLCE & GABBANA</p>
+                    </div>
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>G</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>GAP</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>
+
+                            GIORGIO ARMANI</p>
+                    </div>
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>L</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'> LACOSTE</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>
+                            LEVI'S</p>
+                    </div>
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>M</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'> MPITHEMES STORE</p>
+                    </div>
+
+
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>P</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>
+                            PRADA</p>
+                    </div>
+
+
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>V</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'> VERSACE</p>
+                    </div>
+
+
+
+                </div>
+                <hr></hr>
+
+                <div className='row mt-4'>
+                    <div className='col-lg-3'>
+                        <p className='text-center brn'>Z</p>
+                    </div>
+
+                    <div className='col-lg-3'>
+                        <p className='brn1'>ZARA</p>
+                    </div>
+
+
+
+                </div>
+                <hr></hr>
+
+
+
+
+
+
+            </div>
+
+
 
 
             {/* ----FOOTER---- */}
 
-            <div className='container hide9'>
+            <div className='container hide9 mt-5'>
                 <div className=' row mt-5 '>
                     <div className='col-lg-6 col-md-12'>
                         <div className=''>
@@ -1051,7 +1295,9 @@ function About(props) {
             </div>
 
 
-            {/*   RESPONSIVE FOOTER */}
+
+            {/*  RESPONSIVE FOOTER */}
+
 
             <div className='row f11'>
                 <div className='col-sm-12 '>
@@ -1180,77 +1426,25 @@ function About(props) {
             <hr className='hide4'></hr>
 
 
-
-
-
-
-
-
-
-
-            <div className='container hide1'>
-                <div className=''>
-                    <div className='row ft18'>
-                        <div className='col-lg-6 d-flex'>
-                            <h5 className=' text-start mt-2 navi1'> <i className='navic'>Shella</i></h5>
-                            <p className='text-secondary ft19'>© 2023 Shella Shopify theme. All Rights Reserved. Ecommerce Software by Shopify.</p>
-                        </div>
-
-                        <div className='col-lg-6 '>
-                            <div className='d-flex ft21'>
-                                <BiLogoVisa className='ft20' />
-                                <RiMastercardFill className='ft20' />
-                                <FaCcPaypal className='ft20' />
-                                <LiaCcDiscover className='ft20' />
-                                <FaCcAmazonPay className='ft20' />
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            {/* TABLET FOOTER */}
-
-            <div className='container'>
-                <div className='hide2'>
-                    <div className='row ft18'>
-                        <div className='col-md-12 '>
-                            <h5 className=' text-center mt-2 navi1'> <i className='navic'>Shella</i></h5>
-
-                        </div>
-
-                        <div className='col-md-12 '>
-
-                            <p className='text-secondary text-center ft19'>© 2023 Shella Shopify theme. All Rights Reserved. Ecommerce Software by Shopify.</p>
-                        </div>
-
-                        <div className=' col-md-12 d-flex justify-content-center  '>
-                            <div className='d-flex mt-2'>
-                                <BiLogoVisa className='b11' />
-                                <RiMastercardFill className='b11' />
-                                <FaCcPaypal className='b11' />
-                                <LiaCcDiscover className='b11' />
-                                <FaCcAmazonPay className='b11' />
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
             <div className='top11'>
-                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tpp'><BsArrowUp className='mt-2 foo12' /></a>
+                <a className='tp1 text-white d-flex justify-content-center mt-1' href='#brandtop'><BsArrowUp className='mt-2 foo12' /></a>
             </div>
+
+
+
+
+
+
+
+
+
+
 
         </div>
     );
 }
 
-export default About;
+export default New_Brand;
+
+
+

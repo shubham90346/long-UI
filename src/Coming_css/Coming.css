@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Dancing+Script:wght@400;700&family=Rubik&display=swap');
+
+.coming {
+    font-size: 27px;
+    margin-top: 20%;
+    font-weight: 500;
+    font-family: Rubik;
+}
+
+.coming1{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -2%;
+}
+.coming4{
+    width: 188px;
+    height: 27px;
+    background-color: black;
+    color: white;
+}
+.coming4:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}

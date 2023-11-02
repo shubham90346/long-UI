@@ -1,0 +1,26 @@
+.error1{
+font-size: 40px;
+font-weight: 350;
+}
+.error{
+    margin-top: 10%;
+}
+.error2{
+    font-weight: 300;
+    font-size: 26px;
+}
+.error3{
+    font-size: 12px;
+}
+.error4{
+    width: 100px;
+    height: 27px;
+    border: 1px solid black;
+   margin-left: 46%;
+   font-size: 15px;
+}
+.error4:hover{
+    background-color: black;
+    color: white;
+    
+}

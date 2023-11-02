@@ -1,0 +1,21 @@
+
+.crousal_image{
+    width: 100%;
+   
+}
+.crousal_image:hover{
+    border: 1px solid black;
+}
+.brn{
+    font-size: 25px;
+    font-weight: 300;
+}
+.brn1{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 3%;
+}
+.brn5{
+    margin-top: 8%;
+    margin-left: 6%;
+}
