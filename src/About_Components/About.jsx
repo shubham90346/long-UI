@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GoQuestion } from 'react-icons/go';
 import { GoPerson } from 'react-icons/go';
 import { BsHeart } from 'react-icons/bs';
@@ -47,6 +47,8 @@ function About(props) {
     const [show4, setShow4] = useState(false);
     const [show5, setShow5] = useState(false);
     const [show6, setShow6] = useState(false);
+    const [random, setRandom] = useState(null);
+    console.log(random)
 
     const navigate = useNavigate();
 
@@ -54,6 +56,52 @@ function About(props) {
         navigate('/')
 
     }
+
+    const items = [
+        {
+            id: 1,
+            main: "someone asked a",
+            place: "Berlin"
+        },
+        {
+            id: 2,
+            main: "someone asked a",
+            place: "Canada"
+        },
+        {
+            id: 3,
+            main: "someone asked a",
+            place: "Germany"
+        },
+        {
+            id: 4,
+            main: "someone asked a",
+            place: "UAE"
+        },
+        {
+            id: 5,
+            main: "someone asked a",
+            place: "USA"
+        },
+        {
+            id: 6,
+            main: "someone asked a",
+            place: "india"
+        },
+
+    ]
+
+    useEffect(() => {
+        const GetRandomItems=()=>{
+            const randomIndex = Math.floor(Math.random() * items.length);
+            const selectedItem = items[randomIndex];
+            setRandom(selectedItem);
+        }
+        GetRandomItems();
+    },[])
+
+
+    
     return (
         <div>
             {/* ---HEADER----*/}
@@ -143,7 +191,10 @@ function About(props) {
             <hr className='navi3 hide1'></hr>
 
 
+
             {/* ----NAVIGATION BAR---- */}
+
+
             <div className='container hide1'>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="">
@@ -154,7 +205,7 @@ function About(props) {
                             <ul className="navbar-nav  mb-lg-0  a6" >
 
                                 <li className="nav-item a2 ">
-                                    <a className="nav-link d-flex" href="#" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
+                                    <a className="nav-link d-flex" onMouseOver={() => IsActive(1)} style={active === 1 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
                                         LAYOUTS <span className='nav9'><IoIosArrowDown /></span> </a>
                                 </li>
                                 <li className="nav-item a1 ">
@@ -189,11 +240,11 @@ function About(props) {
                                     </div>
                                 </li>
 
-                                <li className="nav-item a1 ">
+                                <li className="nav-item a1 " >
                                     <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
-                                        <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
+                                        <a className="nav-link d-flex" href="#" >PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
-                                        
+
                                             <div className=' text-secondary  '>
                                                 <Link className="text-secondary" aria-current="page" to="/homev1">
                                                     Homev1
@@ -209,50 +260,50 @@ function About(props) {
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/Gallery">
-                                                Gallery 
+                                                    Gallery
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/aboutus">
-                                                About Us
+                                                    About Us
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/customer">
-                                                Customer Service
+                                                    Customer Service
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/mens">
-                                                Men's Clothing
+                                                    Men's Clothing
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/brand">
-                                                Brand
+                                                    Brand
                                                 </Link>
                                             </div>
 
-                                            
+
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/brandv2">
-                                                Brandv2
+                                                    Brandv2
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/coming">
-                                                Coming Soon
+                                                    Coming Soon
                                                 </Link>
                                             </div>
 
                                             <div className=' text-secondary page11'>
                                                 <Link className="text-secondary" aria-current="page" to="/error">
-                                                Error 404
+                                                    Error 404
                                                 </Link>
                                             </div>
 
@@ -883,9 +934,6 @@ function About(props) {
             <hr className='navi3 hide7'></hr>
 
 
-
-
-
             {/* ----HOME---- */}
 
             <div className='container'>
@@ -1050,6 +1098,7 @@ function About(props) {
                 </div>
             </div>
 
+          
 
             {/*   RESPONSIVE FOOTER */}
 
@@ -1183,11 +1232,6 @@ function About(props) {
 
 
 
-
-
-
-
-
             <div className='container hide1'>
                 <div className=''>
                     <div className='row ft18'>
@@ -1248,6 +1292,9 @@ function About(props) {
             <div className='top11'>
                 <a className='tp1 text-white d-flex justify-content-center mt-1' href='#tpp'><BsArrowUp className='mt-2 foo12' /></a>
             </div>
+
+
+
 
         </div>
     );

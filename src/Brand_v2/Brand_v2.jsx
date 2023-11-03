@@ -226,69 +226,69 @@ function Brand_v2(props) {
                                     <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
                                         <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
-                                        
-                                        <div className=' text-secondary  '>
-                                            <Link className="text-secondary" aria-current="page" to="/homev1">
-                                                Homev1
-                                            </Link>
-                                        </div>
+
+                                            <div className=' text-secondary  '>
+                                                <Link className="text-secondary" aria-current="page" to="/homev1">
+                                                    Homev1
+                                                </Link>
+                                            </div>
 
 
-                                        <div className=' text-secondary page11 '>
-                                            <Link className="text-secondary" aria-current="page" to="/blog">
-                                                Blog
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11 '>
+                                                <Link className="text-secondary" aria-current="page" to="/blog">
+                                                    Blog
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/Gallery">
-                                            Gallery 
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/Gallery">
+                                                    Gallery
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/aboutus">
-                                            About Us
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/aboutus">
+                                                    About Us
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/customer">
-                                            Customer Service
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/customer">
+                                                    Customer Service
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/mens">
-                                            Men's Clothing
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/mens">
+                                                    Men's Clothing
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/brand">
-                                            Brand
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/brand">
+                                                    Brand
+                                                </Link>
+                                            </div>
 
-                                        
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/brandv2">
-                                            Brandv2
-                                            </Link>
-                                        </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/coming">
-                                            Coming Soon
-                                            </Link>
-                                        </div>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/brandv2">
+                                                    Brandv2
+                                                </Link>
+                                            </div>
 
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/error">
-                                            Error 404
-                                            </Link>
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/coming">
+                                                    Coming Soon
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/error">
+                                                    Error 404
+                                                </Link>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </li>
 
@@ -927,8 +927,9 @@ function Brand_v2(props) {
                     <p className='brand1 text-center'>Brands Page Type #2</p>
                 </div>
 
-                <div className='scrollbar'>
-                    <div className='d-flex brand5 '>
+               <div className=''>
+               <div className='scroll-container'>
+                    <div className='d-flex content brand5'>
                         <div className=' brand2 text-white text-center'>ALL</div>
                         <div className=' brand3 text-center'>A</div>
                         <div className=' brand3 text-center'>B</div>
@@ -960,86 +961,260 @@ function Brand_v2(props) {
                     </div>
                 </div>
 
-                <hr className='mt-5'></hr>
+
+               </div>
+              
 
 
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Abo_Shella_170x.progressive.jpg?v=1634398113' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ahella_170x.progressive.jpg?v=1634398266' />
+
+
+
+                <hr className='mt-5 '></hr>
+
+                <div className='row  brand12'>
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Abo_Shella_170x.progressive.jpg?v=1634398113' />
+                        <p className='brand7 text-center'>ABO SHELLA</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ahella_170x.progressive.jpg?v=1634398266' />
+                        <p className='brand6 text-center'>AHELLA</p>
+                    </div>
                 </div>
 
-                <div className='d-flex'>
-                    <p className='brand7'>ABO SHELLA</p>
-                    <p className='brand6'>AHELLA</p>
+
+                {/* RESPONSIVE */}
+
+                <div className='row brand13 '>
+                    <div className='d-flex'>
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/Abo_Shella_170x.progressive.jpg?v=1634398113' />
+                            <p className='brand7 text-center'>ABO SHELLA</p>
+                        </div>
+
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ahella_170x.progressive.jpg?v=1634398266' />
+                            <p className='brand6 text-center'>AHELLA</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr className=''></hr>
+
+
+
+
+                <div className='row brand12'>
+
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Beautiful_Shellawat_170x.progressive.jpg?v=1634398309' />
+                        <p className='brand8 text-center'>BEATIFUL SHELLAWAT</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Best_Shellagua_170x.progressive.jpg?v=1634398357' />
+                        <p className='brand7 text-center'>BEST SHELLAGUA</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Bi_Shella_170x.progressive.jpg?v=1634398391' />
+                        <p className='brand9 text-center'>BI SHELLA</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 '>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/BST_SHLL_170x.progressive.jpg?v=1634398651' />
+                        <p className='brand9 text-center'>BST SHLL</p>
+                    </div>
+
+                </div>
+
+                {/* RESPONSIVE */}
+
+                <div className=' brand13'>
+                    <div className='d-flex'>
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/Beautiful_Shellawat_170x.progressive.jpg?v=1634398309' />
+                            <p className='brand8 text-center'>BEATIFUL SHELLAWAT</p>
+                        </div>
+
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/Best_Shellagua_170x.progressive.jpg?v=1634398357' />
+                            <p className='brand7 text-center'>BEST SHELLAGUA</p>
+                        </div>
+
+                    </div>
+
+                    <div className='d-flex'>
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/Bi_Shella_170x.progressive.jpg?v=1634398391' />
+                            <p className='brand9 text-center'>BI SHELLA</p>
+                        </div>
+
+                        <div className=' col-sm-6'>
+                            <img src='https://shella-demo.myshopify.com/cdn/shop/files/BST_SHLL_170x.progressive.jpg?v=1634398651' />
+                            <p className='brand9 text-center'>BST SHLL</p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+                <hr className=''></hr>
+
+
+
+                <div className='row brand12'>
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ca_Shella_170x.progressive.jpg?v=1634398709' />
+                        <p className='brand10 text-center'>CA SHELLA</p>
+                    </div>
+                </div>
+                {/* 
+                RESPONSIVE */}
+
+                <div className=' brand13'>
+                    
+                    <div className=' col-sm-6'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ca_Shella_170x.progressive.jpg?v=1634398709' />
+                        <p className='brand10 text-center'>CA SHELLA</p>
+                    </div>
+
+              
+                  
+                </div>
+
+
+
+                <hr className=''></hr>
+
+
+
+                <div className='row brand12'>
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/De_Shella_170x.progressive.jpg?v=1634399112' />
+                        <p className='brand10 text-center'>DE SHELLA</p>
+                    </div>
+
+                    <div className='col-md-3 col-lg-2 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Duet_Shella_170x.progressive.jpg?v=1634399157' />
+                        <p className='brand9 text-center'>DUET SHELLA</p>
+                    </div>
+                </div>
+
+                {/* RESPONSIVE */}
+
+                <div className='row brand13'>
+                    <div className='d-flex'>
+                    <div className=' col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/De_Shella_170x.progressive.jpg?v=1634399112' />
+                        <p className='brand10 text-center'>DE SHELLA</p>
+                    </div>
+
+                    <div className=' col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Duet_Shella_170x.progressive.jpg?v=1634399157' />
+                        <p className='brand9 text-center'>DUET SHELLA</p>
+                    </div>
+
+
+                    </div>
+                    
+                </div>
+
+
+                <hr className=''></hr>
+
+
+
+                <div className='row brand12'>
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashiohella_170x.progressive.jpg?v=1634399294' />
+                        <p className='brand10 text-center'>FASHIOHELLA</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashion_Shellakan_170x.progressive.jpg?v=1634399321' />
+                        <p className='brand10 text-center'>FASHION SHELLAKAN</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Foo_Shella_170x.progressive.jpg?v=1634399342' />
+                        <p className='brand10 text-center'>FOO SHELLA</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/FSHN-SHLL_170x.progressive.jpg?v=1634399360' />
+                        <p className='brand9 text-center'>FSHN-SHLL</p>
+                    </div>
+
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Future_Shella_Inc_170x.progressive.jpg?v=1634399381' />
+
+                        <p className='brand9 text-center'>FUTURE SHELLA INC</p>
+                    </div>
+                </div>
+
+
+                {/* RESPONSIVE */}
+
+                <div className='row brand13'>
+                    <div className='d-flex'>
+                    <div className=' col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashiohella_170x.progressive.jpg?v=1634399294' />
+                        <p className='brand10 text-center'>FASHIOHELLA</p>
+                    </div>
+
+                    <div className='col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashion_Shellakan_170x.progressive.jpg?v=1634399321' />
+                        <p className='brand10 text-center'>FASHION SHELLAKAN</p>
+                    </div>
+
+                    </div>
+                   
+                   <div className='d-flex'>
+                   <div className=' col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Foo_Shella_170x.progressive.jpg?v=1634399342' />
+                        <p className='brand10 text-center'>FOO SHELLA</p>
+                    </div>
+
+                    <div className=' col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/FSHN-SHLL_170x.progressive.jpg?v=1634399360' />
+                        <p className='brand9 text-center'>FSHN-SHLL</p>
+                    </div>
+
+                   </div>
+
+                    
+
+                </div>
+
+
+
+                <hr ></hr>
+
+
+
+                <div className='row'>
+                    <div className='col-lg-2 col-md-3 col-sm-4'>
+                        <img src='https://shella-demo.myshopify.com/cdn/shop/files/Idea_Shella_170x.progressive.jpg?v=1634399405' />
+                        <p className='brand10 text-center'>IDEA SHELLA</p>
+                    </div>
                 </div>
 
                 <hr></hr>
 
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Beautiful_Shellawat_170x.progressive.jpg?v=1634398309' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Best_Shellagua_170x.progressive.jpg?v=1634398357' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Bi_Shella_170x.progressive.jpg?v=1634398391' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/BST_SHLL_170x.progressive.jpg?v=1634398651' />
-                </div>
+                {/* RESPONSIVE  */}
 
-                <div className='d-flex'>
-                    <p className='brand8'>BEATIFUL SHELLAWAT</p>
-                    <p className='brand7'>BEST SHELLAGUA</p>
-                    <p className='brand9'>BI SHELLA</p>
-                    <p className='brand9'>BST SHLL</p>
-                </div>
 
-                <hr></hr>
-
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Ca_Shella_170x.progressive.jpg?v=1634398709' />
-                </div>
-
-                <div>
-                    <p className='brand10'>CA SHELLA</p>
-                </div>
-
-                <hr></hr>
-
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/De_Shella_170x.progressive.jpg?v=1634399112' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Duet_Shella_170x.progressive.jpg?v=1634399157' />
-
-                </div>
-
-                <div className='d-flex'>
-                    <p className='brand10'>DE SHELLA</p>
-                    <p className='brand9'>DUET SHELLA</p>
-                </div>
-
-                <hr></hr>
-
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashiohella_170x.progressive.jpg?v=1634399294' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Fashion_Shellakan_170x.progressive.jpg?v=1634399321' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Foo_Shella_170x.progressive.jpg?v=1634399342' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/FSHN-SHLL_170x.progressive.jpg?v=1634399360' />
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Future_Shella_Inc_170x.progressive.jpg?v=1634399381' />
-                </div>
-
-                <div className='d-flex'>
-                    <p className='brand10'>FASHIOHELLA</p>
-                    <p className='brand10'>FASHION SHELLAKAN</p>
-                    <p className='brand10'>FOO SHELLA</p>
-                    <p className='brand9'>FSHN-SHLL</p>
-                    <p className='brand9'>FUTURE SHELLA INC</p>
-                </div>
-
-                <hr></hr>
-
-                <div>
-                    <img src='https://shella-demo.myshopify.com/cdn/shop/files/Idea_Shella_170x.progressive.jpg?v=1634399405' />
-                </div>
-                <div>
-                    <p className='brand10'>IDEA SHELLA</p>
-                </div>
-
-                <hr></hr>
 
 
 

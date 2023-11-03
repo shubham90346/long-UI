@@ -869,16 +869,16 @@ function Coming(props) {
 
             <div className='container'>
                 <div className='row mt-5'>
-                    <div className='col-lg-6'>
-                        <div className=''>
+                    <div className='col-lg-6 col-md-6 col-sm-12'>
+                        <div className='coming11'>
                         <p className='coming'>Our new website will be<br/> available soon...</p>
                      
 
                         <p className='text-secondary coming1'>Hi There</p>
                     
                         <div className=' mt-4'>
-                            <input type='text' className='ft66 ' placeholder='Enter your Email Address' />
-                            <div className='coming4 mt-3 '>
+                            <input type='text' className='ft66 coming9' placeholder='Enter your Email Address' />
+                            <div className='coming4 mt-3  coming12 '>
                                 <p className=' text-center '>SUBSCRIBE!</p>
                             </div>
                         </div>
@@ -887,8 +887,12 @@ function Coming(props) {
                         </div> 
                     </div>
 
-                    <div className='col-lg-6'>
+                    <div className='col-lg-6 col-md-6 col-sm-12'>
+                        <div className='coming10'>
+
                         <img src='https://shella-maintenance.myshopify.com/cdn/shop/files/img_1400x.png?v=1613768217 ' className='w-100'/>
+                        </div>
+                       
                     </div>
 
                 </div>

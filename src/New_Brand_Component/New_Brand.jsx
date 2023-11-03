@@ -29,6 +29,7 @@ import { BsSearch } from 'react-icons/bs'
 import { AiOutlineMenuUnfold } from 'react-icons/ai'
 import { BsPlus } from 'react-icons/bs'
 
+
 function New_Brand(props) {
     const [active, IsActive] = useState(0);
     const [showText, setShowText] = useState(false);
@@ -46,8 +47,6 @@ function New_Brand(props) {
     const handleclick = () => {
         navigate('/')
     }
-
-
 
 
 
@@ -193,72 +192,72 @@ function New_Brand(props) {
                                     <div className=' dropdown ' onMouseOver={() => IsActive(5)} style={active === 5 ? { color: 'black ' } : { color: 'rgb(113, 107, 110)' }}>
                                         <a className="nav-link d-flex" href="#">PAGES<span className='nav9'><IoIosArrowDown /></span></a>
                                         <div class="dropdown-content">
-                                        
-                                        <div className=' text-secondary  '>
-                                            <Link className="text-secondary" aria-current="page" to="/homev1">
-                                                Homev1
-                                            </Link>
+
+                                            <div className=' text-secondary  '>
+                                                <Link className="text-secondary" aria-current="page" to="/homev1">
+                                                    Homev1
+                                                </Link>
+                                            </div>
+
+
+                                            <div className=' text-secondary page11 '>
+                                                <Link className="text-secondary" aria-current="page" to="/blog">
+                                                    Blog
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/Gallery">
+                                                    Gallery
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/aboutus">
+                                                    About Us
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/customer">
+                                                    Customer Service
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/mens">
+                                                    Men's Clothing
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/brand">
+                                                    Brand
+                                                </Link>
+                                            </div>
+
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/brandv2">
+                                                    Brandv2
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/coming">
+                                                    Coming Soon
+                                                </Link>
+                                            </div>
+
+                                            <div className=' text-secondary page11'>
+                                                <Link className="text-secondary" aria-current="page" to="/error">
+                                                    Error 404
+                                                </Link>
+                                            </div>
+
+
+
                                         </div>
-
-
-                                        <div className=' text-secondary page11 '>
-                                            <Link className="text-secondary" aria-current="page" to="/blog">
-                                                Blog
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/Gallery">
-                                            Gallery 
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/aboutus">
-                                            About Us
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/customer">
-                                            Customer Service
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/mens">
-                                            Men's Clothing
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/brand">
-                                            Brand
-                                            </Link>
-                                        </div>
-
-                                        
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/brandv2">
-                                            Brandv2
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/coming">
-                                            Coming Soon
-                                            </Link>
-                                        </div>
-
-                                        <div className=' text-secondary page11'>
-                                            <Link className="text-secondary" aria-current="page" to="/error">
-                                            Error 404
-                                            </Link>
-                                        </div>
-
-
-
-                                    </div>
                                     </div>
                                 </li>
 
@@ -885,7 +884,6 @@ function New_Brand(props) {
 
 
 
-
             {/* ---HOME---  */}
 
             <div className='container'>
@@ -901,7 +899,7 @@ function New_Brand(props) {
 
 
 
-            <div id="carouselExampleControls" className="carousel slide mt-5" data-bs-ride="carousel">
+            <div id="carouselExampleControls" className="carousel slide mt-5 nw2" data-bs-ride="carousel">
                 <div className='container'>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -979,50 +977,146 @@ function New_Brand(props) {
 
 
 
-            <div className='container'>
-                <div className='d-flex brn5 '>
-                    <div className=' brand2 text-white text-center'>ALL</div>
-                    <div className=' brand4 text-center'>A</div>
-                    <div className=' brand4 text-center'>B</div>
-                    <div className=' brand3 text-center'>C</div>
-                    <div className=' brand3 text-center'>D</div>
-                    <div className=' brand4 text-center'>E</div>
-                    <div className=' brand3 text-center'>F</div>
-                    <div className=' brand4 text-center'>G</div>
-                    <div className=' brand4 text-center'>H</div>
-                    <div className=' brand4 text-center'>I</div>
-                    <div className=' brand4 text-center'>J</div>
-                    <div className=' brand4 text-center'>K</div>
-                    <div className=' brand3 text-center'>L</div>
-                    <div className=' brand3 text-center'>M</div>
-                    <div className=' brand4 text-center'>N</div>
-                    <div className=' brand4 text-center'>O</div>
-                    <div className=' brand3 text-center'>P</div>
-                    <div className=' brand4 text-center'>Q</div>
-                    <div className=' brand4 text-center'>R</div>
-                    <div className=' brand4 text-center'>S</div>
-                    <div className=' brand4 text-center'>T</div>
-                    <div className=' brand4 text-center'>U</div>
-                    <div className=' brand3 text-center'>V</div>
-                    <div className=' brand4 text-center'>W</div>
-                    <div className=' brand4 text-center'>X</div>
-                    <div className=' brand4 text-center'>Y</div>
-                    <div className=' brand3 text-center'>Z</div>
-                    <div className=' brand2 text-white text-center'>#</div>
+            <div id="carouselExampleControls1" className="carousel slide mt-5 nw1" data-bs-ride="carousel">
+                <div className='container'>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <div className='row'>
+                                <div className='d-flex'>
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                    </div>
+
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand1_81ea27f2-5624-415f-aab1-3c2df96291d2_390x.png?v=1613702434" className='crousal_image' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="carousel-item">
+                            <div className='row'>
+                                <div className='d-flex'>
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.3_390x.png?v=1613702269" className='crousal_image' />
+                                    </div>
+
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.4_400x.png?v=1613702269" className='crousal_image' />
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div className="carousel-item">
+                            <div className='row'>
+                                <div className='d-flex'>
+
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/brand2_6d31d9ee-ee7a-4ea9-8024-f7f0133b9d59_400x.png?v=1613702434" className='crousal_image' />
+                                    </div>
+
+                                    <div className='col-sm-6'>
+                                        <img src="https://shella-demo.myshopify.com/cdn/shop/files/Group_2.1_390x.png?v=1613702269" className='crousal_image' />
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
                 </div>
+
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon crousal_butt" aria-hidden="true"></span>
+
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </button>
+            </div>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+            <div className='container'>
+            <div className='scroll-container'>
+                    <div className='d-flex brn5 content '>
+                        <div className=' brand2 text-white text-center'>ALL</div>
+                        <div className=' brand4 text-center'>A</div>
+                        <div className=' brand4 text-center'>B</div>
+                        <div className=' brand3 text-center'>C</div>
+                        <div className=' brand3 text-center'>D</div>
+                        <div className=' brand4 text-center'>E</div>
+                        <div className=' brand3 text-center'>F</div>
+                        <div className=' brand4 text-center'>G</div>
+                        <div className=' brand4 text-center'>H</div>
+                        <div className=' brand4 text-center'>I</div>
+                        <div className=' brand4 text-center'>J</div>
+                        <div className=' brand4 text-center'>K</div>
+                        <div className=' brand3 text-center'>L</div>
+                        <div className=' brand3 text-center'>M</div>
+                        <div className=' brand4 text-center'>N</div>
+                        <div className=' brand4 text-center'>O</div>
+                        <div className=' brand3 text-center'>P</div>
+                        <div className=' brand4 text-center'>Q</div>
+                        <div className=' brand4 text-center'>R</div>
+                        <div className=' brand4 text-center'>S</div>
+                        <div className=' brand4 text-center'>T</div>
+                        <div className=' brand4 text-center'>U</div>
+                        <div className=' brand3 text-center'>V</div>
+                        <div className=' brand4 text-center'>W</div>
+                        <div className=' brand4 text-center'>X</div>
+                        <div className=' brand4 text-center'>Y</div>
+                        <div className=' brand3 text-center'>Z</div>
+                        <div className=' brand2 text-white text-center'>#</div>
+                    </div>
+
+                </div> 
+
                 <hr className='mt-5'></hr>
 
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3 col-md-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='text-center brn'>C</p>
                     </div>
 
-                    <div className='col-lg-3 col-md-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'> CALVIN KLEIN</p>
                     </div>
 
-                    <div className='col-lg-3 col-md-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>
                             CHANEL</p>
                     </div>
@@ -1031,16 +1125,16 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='text-center brn'>D</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>
                             DIOR</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>
                             DOLCE & GABBANA</p>
                     </div>
@@ -1049,15 +1143,15 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='text-center brn'>G</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>GAP</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>
 
                             GIORGIO ARMANI</p>
@@ -1067,15 +1161,15 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='text-center brn'>L</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'> LACOSTE</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col'>
                         <p className='brn1'>
                             LEVI'S</p>
                     </div>
@@ -1084,12 +1178,12 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-4'>
                         <p className='text-center brn'>M</p>
                     </div>
 
-                    <div className='col-lg-3'>
-                        <p className='brn1'> MPITHEMES STORE</p>
+                    <div className='col-lg-3 col-md-3 col-6'>
+                        <p className='brn1'> MPITHEMES </p>
                     </div>
 
 
@@ -1098,11 +1192,11 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-4'>
                         <p className='text-center brn'>P</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-6'>
                         <p className='brn1'>
                             PRADA</p>
                     </div>
@@ -1113,11 +1207,11 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-4'>
                         <p className='text-center brn'>V</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-6'>
                         <p className='brn1'> VERSACE</p>
                     </div>
 
@@ -1127,23 +1221,17 @@ function New_Brand(props) {
                 <hr></hr>
 
                 <div className='row mt-4'>
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-4'>
                         <p className='text-center brn'>Z</p>
                     </div>
 
-                    <div className='col-lg-3'>
+                    <div className='col-lg-3 col-md-3 col-6'>
                         <p className='brn1'>ZARA</p>
                     </div>
 
 
-
                 </div>
                 <hr></hr>
-
-
-
-
-
 
             </div>
 
@@ -1429,16 +1517,6 @@ function New_Brand(props) {
             <div className='top11'>
                 <a className='tp1 text-white d-flex justify-content-center mt-1' href='#brandtop'><BsArrowUp className='mt-2 foo12' /></a>
             </div>
-
-
-
-
-
-
-
-
-
-
 
         </div>
     );

@@ -38,27 +38,100 @@
 }
 
 .brand6{
-    margin-left: 9%;
+ 
     font-size: 18px;
     font-weight: 300;
 }
 .brand7{
-    margin-left: 2.5%;
+    
     font-size: 18px;
     font-weight: 300;
 }
 .brand8{
-    margin-left: 0%;
+
     font-size: 18px;
     font-weight: 300;
 }
 .brand9{
-    margin-left: 6%;
+   
     font-size: 18px;
     font-weight: 300;
 }
 .brand10{
-    margin-left: 3.2%;
+  
     font-size: 18px;
     font-weight: 300;
 }
+
+.brand13{
+    display: none;
+}
+
+
+@media only screen and (max-width: 766px) and (min-width: 425px){
+    .brand12{
+        display: none;
+
+    }
+    .brand13{
+        display: block;
+    }
+    .scroll-container {
+        width: 377px;
+        overflow-x: scroll; 
+        /* white-space: nowrap; */
+    }
+    .content {
+        margin-top: 8%;
+        width: 600px; 
+        /* margin-left: 10%; */
+    }
+}
+
+
+@media only screen and (max-width: 423px) and (min-width: 375px){
+    .brand12{
+        display: none;
+
+    }
+    .brand13{
+        display: block;
+    }
+    .scroll-container {
+        width: 329px;
+        overflow-x: scroll; 
+        /* white-space: nowrap; */
+    }
+    .content {
+        margin-top: 8%;
+        width: 600px; 
+        /* margin-left: 10%; */
+    }
+
+}
+
+@media only screen and (max-width: 374px) and (min-width: 320px){
+
+    .brand12{
+        display: none;
+
+    }
+    .brand13{
+        display: block;
+    }   
+    
+    .scroll-container {
+        width: 300px;
+        overflow-x: scroll; 
+        /* white-space: nowrap; */
+    }
+    .content {
+        margin-top: 8%;
+        width: 600px; 
+        /* margin-left: 10%; */
+    }
+
+}
+
+
+
