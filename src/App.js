@@ -56,7 +56,7 @@ import Error from './Error_page_Components/Error';
 
 function App() {
   return (
-    <div className="">
+    <div className="check">
 
       <BrowserRouter>
         <Routes>
